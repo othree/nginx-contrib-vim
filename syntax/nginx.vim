@@ -10,28 +10,26 @@ setlocal iskeyword+=/
 setlocal iskeyword+=:
 
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
-syn match ngxVariableBlock '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
-syn region ngxBlock start=+^+ end=+{+ skip=+\${+ contains=ngxComment,ngxDirectiveBlock,ngxVariableBlock,ngxString oneline
 syn region ngxString start=+\z(["']\)+ end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 syn match ngxComment ' *#.*$'
 
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
 
-syn keyword ngxDirectiveBlock http         contained
-syn keyword ngxDirectiveBlock mail         contained
-syn keyword ngxDirectiveBlock events       contained
-syn keyword ngxDirectiveBlock server       contained
-syn keyword ngxDirectiveBlock types        contained
-syn keyword ngxDirectiveBlock location     contained
-syn keyword ngxDirectiveBlock upstream     contained
-syn keyword ngxDirectiveBlock charset_map  contained
-syn keyword ngxDirectiveBlock limit_except contained
-syn keyword ngxDirectiveBlock if           contained
-syn keyword ngxDirectiveBlock geo          contained
-syn keyword ngxDirectiveBlock map          contained
-syn keyword ngxDirectiveBlock split_clients contained
+syn keyword ngxDirectiveBlock http
+syn keyword ngxDirectiveBlock mail
+syn keyword ngxDirectiveBlock events
+syn keyword ngxDirectiveBlock server
+syn keyword ngxDirectiveBlock types
+syn keyword ngxDirectiveBlock location
+syn keyword ngxDirectiveBlock upstream
+syn keyword ngxDirectiveBlock charset_map
+syn keyword ngxDirectiveBlock limit_except
+syn keyword ngxDirectiveBlock if
+syn keyword ngxDirectiveBlock geo
+syn keyword ngxDirectiveBlock map
+syn keyword ngxDirectiveBlock split_clients
 
 syn keyword ngxDirectiveImportant include
 syn keyword ngxDirectiveImportant root
@@ -819,9 +817,7 @@ syn keyword ngxDirectiveThirdParty xss_output_type
 
 hi link ngxComment Comment
 hi link ngxVariable Identifier
-hi link ngxVariableBlock Identifier
 hi link ngxVariableString PreProc
-hi link ngxBlock Normal
 hi link ngxString String
 
 hi link ngxBoolean Boolean
