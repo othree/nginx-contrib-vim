@@ -13,16 +13,22 @@ syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn region ngxString start=+\z(["']\)+ end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 syn match ngxComment ' *#.*$'
+syn match ngxRewriteURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxURI skipwhite
+syn match ngxURI /\S\+/ contained contains=ngxVariableString skipwhite
 
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
+
 
 syn keyword ngxDirectiveBlock http
 syn keyword ngxDirectiveBlock mail
 syn keyword ngxDirectiveBlock events
 syn keyword ngxDirectiveBlock server
 syn keyword ngxDirectiveBlock types
-syn keyword ngxDirectiveBlock location
+syn match   ngxLocationPath     /\S\+/ contained
+syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath skipwhite
+syn match   ngxLocationAtname   /@\w\+/
+syn keyword ngxDirectiveBlock location nextgroup=ngxLocationAtname,ngxLocationOperator,ngxLocationPath skipwhite
 syn keyword ngxDirectiveBlock upstream
 syn keyword ngxDirectiveBlock charset_map
 syn keyword ngxDirectiveBlock limit_except
@@ -46,8 +52,10 @@ syn keyword ngxDirectiveImportant try_files
 
 syn keyword ngxDirectiveControl break
 syn keyword ngxDirectiveControl return
-syn keyword ngxDirectiveControl rewrite
+syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite
 syn keyword ngxDirectiveControl set
+
+syn keyword ngxRewriteFlag last break redirect permanent
 
 syn keyword ngxDirectiveError error_page
 syn keyword ngxDirectiveError post_action
@@ -182,6 +190,7 @@ syn keyword ngxDirective gzip_types
 syn keyword ngxDirective gzip_vary
 syn keyword ngxDirective gzip_window
 syn keyword ngxDirective hash
+syn match   ngxDirective /http2/ " Not real directive
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
@@ -265,7 +274,8 @@ syn keyword ngxDirective port_in_redirect
 syn keyword ngxDirective post_acceptex
 syn keyword ngxDirective postpone_gzipping
 syn keyword ngxDirective postpone_output
-syn keyword ngxDirective protocol
+syn keyword ngxDirective protocol nextgroup=ngxMailProtocol skipwhite
+syn keyword ngxMailProtocol imap pop3 smtp
 syn keyword ngxDirective proxy
 syn keyword ngxDirective proxy_bind
 syn keyword ngxDirective proxy_buffer
@@ -819,8 +829,11 @@ hi link ngxComment Comment
 hi link ngxVariable Identifier
 hi link ngxVariableString PreProc
 hi link ngxString String
+hi link ngxLocationPath String
+hi link ngxLocationAtname Identifier
 
 hi link ngxBoolean Boolean
+hi link ngxRewriteFlag Boolean
 hi link ngxDirectiveBlock Statement
 hi link ngxDirectiveImportant Type
 hi link ngxDirectiveControl Keyword
