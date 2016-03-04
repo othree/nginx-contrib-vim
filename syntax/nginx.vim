@@ -11,10 +11,11 @@ setlocal iskeyword+=:
 
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
-syn region ngxString start=+\z(["']\)+ end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 syn match ngxComment ' *#.*$'
 syn match ngxRewriteURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxURI skipwhite
 syn match ngxURI /\S\+/ contained contains=ngxVariableString skipwhite
+syn match ngxLocationPath /[^ {]\+/ contained
+syn region ngxString start=+\z(["']\)+ end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
@@ -25,10 +26,9 @@ syn keyword ngxDirectiveBlock mail
 syn keyword ngxDirectiveBlock events
 syn keyword ngxDirectiveBlock server
 syn keyword ngxDirectiveBlock types
-syn match   ngxLocationPath     /\S\+/ contained
-syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath skipwhite
+syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath,ngxString skipwhite
 syn match   ngxLocationAtname   /@\w\+/
-syn keyword ngxDirectiveBlock location nextgroup=ngxLocationAtname,ngxLocationOperator,ngxLocationPath skipwhite
+syn keyword ngxDirectiveBlock location nextgroup=ngxLocationAtname,ngxLocationOperator,ngxLocationPath,ngxString skipwhite
 syn keyword ngxDirectiveBlock upstream
 syn keyword ngxDirectiveBlock charset_map
 syn keyword ngxDirectiveBlock limit_except
