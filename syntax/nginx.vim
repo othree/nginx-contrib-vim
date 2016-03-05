@@ -205,6 +205,8 @@ syn keyword ngxDirective imap_client_buffer
 syn keyword ngxDirective index
 syn keyword ngxDirective iocp_threads
 syn keyword ngxDirective ip_hash
+syn keyword ngxDirective js_run
+syn keyword ngxDirective js_set
 syn keyword ngxDirective keepalive
 syn keyword ngxDirective keepalive_disable
 syn keyword ngxDirective keepalive_requests
