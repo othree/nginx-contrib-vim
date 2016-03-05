@@ -559,6 +559,16 @@ syn keyword ngxDirectiveThirdParty accesskey_signature
 syn keyword ngxDirectiveThirdParty auth_pam
 syn keyword ngxDirectiveThirdParty auth_pam_service_name
 
+" Brotli Module <https://github.com/google/ngx_brotli>
+" Nginx module for Brotli compression 
+syn keyword ngxDirectiveThirdParty brotli_static
+syn keyword ngxDirectiveThirdParty brotli
+syn keyword ngxDirectiveThirdParty brotli_types
+syn keyword ngxDirectiveThirdParty brotli_buffers
+syn keyword ngxDirectiveThirdParty brotli_comp_level
+syn keyword ngxDirectiveThirdParty brotli_window
+syn keyword ngxDirectiveThirdParty brotli_min_length
+
 " Cache Purge Module <http://labs.frickle.com/nginx_ngx_cache_purge/>
 " Module adding ability to purge content from FastCGI and proxy caches.
 syn keyword ngxDirectiveThirdParty fastcgi_cache_purge
