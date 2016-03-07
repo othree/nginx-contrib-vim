@@ -190,7 +190,7 @@ syn keyword ngxDirective gzip_types
 syn keyword ngxDirective gzip_vary
 syn keyword ngxDirective gzip_window
 syn keyword ngxDirective hash
-syn match   ngxDirective /http2/ " Not real directive
+syn keyword ngxDirective http2 " Not a real directive
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
