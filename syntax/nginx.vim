@@ -252,6 +252,8 @@ syn keyword ngxDirective modern_browser_value
 syn keyword ngxDirective mp4
 syn keyword ngxDirective mp4_buffer_size
 syn keyword ngxDirective mp4_max_buffer_size
+syn keyword ngxDirective mp4_limit_rate
+syn keyword ngxDirective mp4_limit_rate_after
 syn keyword ngxDirective msie_padding
 syn keyword ngxDirective msie_refresh
 syn keyword ngxDirective multi_accept
