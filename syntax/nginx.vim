@@ -27,8 +27,8 @@ syn keyword ngxDirectiveBlock events
 syn keyword ngxDirectiveBlock server
 syn keyword ngxDirectiveBlock types
 syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath,ngxString skipwhite
-syn match   ngxLocationAtname   /@\w\+/
-syn keyword ngxDirectiveBlock location nextgroup=ngxLocationAtname,ngxLocationOperator,ngxLocationPath,ngxString skipwhite
+syn match   ngxLocationNamedLoc /@\w\+/
+syn keyword ngxDirectiveBlock location nextgroup=ngxLocationNamedLoc,ngxLocationOperator,ngxLocationPath,ngxString skipwhite
 syn keyword ngxDirectiveBlock upstream
 syn keyword ngxDirectiveBlock charset_map
 syn keyword ngxDirectiveBlock limit_except
@@ -918,7 +918,7 @@ hi link ngxVariable Identifier
 hi link ngxVariableString PreProc
 hi link ngxString String
 hi link ngxLocationPath String
-hi link ngxLocationAtname Identifier
+hi link ngxLocationNamedLoc Identifier
 
 hi link ngxBoolean Boolean
 hi link ngxRewriteFlag Boolean
