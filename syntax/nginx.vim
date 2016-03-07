@@ -134,10 +134,12 @@ syn keyword ngxDirective fastcgi_cache
 syn keyword ngxDirective fastcgi_cache_bypass
 syn keyword ngxDirective fastcgi_cache_key
 syn keyword ngxDirective fastcgi_cache_lock
+syn keyword ngxDirective fastcgi_cache_lock_age
 syn keyword ngxDirective fastcgi_cache_lock_timeout
 syn keyword ngxDirective fastcgi_cache_methods
 syn keyword ngxDirective fastcgi_cache_min_uses
 syn keyword ngxDirective fastcgi_cache_path
+syn keyword ngxDirective fastcgi_cache_purge
 syn keyword ngxDirective fastcgi_cache_revalidate
 syn keyword ngxDirective fastcgi_cache_use_stale
 syn keyword ngxDirective fastcgi_cache_valid
@@ -150,6 +152,7 @@ syn keyword ngxDirective fastcgi_ignore_headers
 syn keyword ngxDirective fastcgi_index
 syn keyword ngxDirective fastcgi_intercept_errors
 syn keyword ngxDirective fastcgi_keep_conn
+syn keyword ngxDirective fastcgi_limit_rate
 syn keyword ngxDirective fastcgi_max_temp_file_size
 syn keyword ngxDirective fastcgi_next_upstream
 syn keyword ngxDirective fastcgi_next_upstream_timeout
@@ -160,6 +163,7 @@ syn keyword ngxDirective fastcgi_pass_header
 syn keyword ngxDirective fastcgi_pass_request_body
 syn keyword ngxDirective fastcgi_pass_request_headers
 syn keyword ngxDirective fastcgi_read_timeout
+syn keyword ngxDirective fastcgi_request_buffering
 syn keyword ngxDirective fastcgi_send_lowat
 syn keyword ngxDirective fastcgi_send_timeout
 syn keyword ngxDirective fastcgi_split_path_info
