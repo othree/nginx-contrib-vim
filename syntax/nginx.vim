@@ -487,6 +487,7 @@ syn keyword ngxDirective uwsgi_cache
 syn keyword ngxDirective uwsgi_cache_bypass
 syn keyword ngxDirective uwsgi_cache_key
 syn keyword ngxDirective uwsgi_cache_lock
+syn keyword ngxDirective uwsgi_cache_lock_age
 syn keyword ngxDirective uwsgi_cache_lock_timeout
 syn keyword ngxDirective uwsgi_cache_methods
 syn keyword ngxDirective uwsgi_cache_min_uses
@@ -508,14 +509,19 @@ syn keyword ngxDirective uwsgi_next_upstream_timeout
 syn keyword ngxDirective uwsgi_next_upstream_tries
 syn keyword ngxDirective uwsgi_no_cache
 syn keyword ngxDirective uwsgi_param
+syn keyword ngxDirective uwsgi_pass
 syn keyword ngxDirective uwsgi_pass_header
 syn keyword ngxDirective uwsgi_pass_request_body
 syn keyword ngxDirective uwsgi_pass_request_headers
 syn keyword ngxDirective uwsgi_read_timeout
+syn keyword ngxDirective uwsgi_request_buffering
 syn keyword ngxDirective uwsgi_send_timeout
+syn keyword ngxDirective uwsgi_ssl_certificate
+syn keyword ngxDirective uwsgi_ssl_certificate_key
 syn keyword ngxDirective uwsgi_ssl_ciphers
 syn keyword ngxDirective uwsgi_ssl_crl
 syn keyword ngxDirective uwsgi_ssl_name
+syn keyword ngxDirective uwsgi_ssl_password_file
 syn keyword ngxDirective uwsgi_ssl_protocols
 syn keyword ngxDirective uwsgi_ssl_server_name
 syn keyword ngxDirective uwsgi_ssl_session_reuse
