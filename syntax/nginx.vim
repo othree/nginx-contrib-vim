@@ -555,9 +555,9 @@ syn keyword ngxDirective xslt_stylesheet
 syn keyword ngxDirective xslt_types
 
 " 3rd party module list:
-" http://wiki.nginx.org/Nginx3rdPartyModules
+" https://www.nginx.com/resources/wiki/modules/
 
-" Accept Language Module <http://wiki.nginx.org/NginxAcceptLanguageModule>
+" Accept Language Module <https://www.nginx.com/resources/wiki/modules/accept_language/>
 " Parses the Accept-Language header and gives the most suitable locale from a list of supported locales.
 syn keyword ngxDirectiveThirdParty set_from_accept_language
 
@@ -568,7 +568,7 @@ syn keyword ngxDirectiveThirdParty accesskey_arg
 syn keyword ngxDirectiveThirdParty accesskey_hashmethod
 syn keyword ngxDirectiveThirdParty accesskey_signature
 
-" Auth PAM Module <http://web.iti.upv.es/~sto/nginx/>
+" Auth PAM Module <https://github.com/sto/ngx_http_auth_pam_module>
 " HTTP Basic Authentication using PAM.
 syn keyword ngxDirectiveThirdParty auth_pam
 syn keyword ngxDirectiveThirdParty auth_pam_service_name
@@ -583,7 +583,7 @@ syn keyword ngxDirectiveThirdParty brotli_comp_level
 syn keyword ngxDirectiveThirdParty brotli_window
 syn keyword ngxDirectiveThirdParty brotli_min_length
 
-" Cache Purge Module <http://labs.frickle.com/nginx_ngx_cache_purge/>
+" Cache Purge Module <https://github.com/FRiCKLE/ngx_cache_purge>
 " Module adding ability to purge content from FastCGI and proxy caches.
 syn keyword ngxDirectiveThirdParty fastcgi_cache_purge
 syn keyword ngxDirectiveThirdParty proxy_cache_purge
@@ -595,14 +595,14 @@ syn keyword ngxDirectiveThirdParty chunkin_keepalive
 syn keyword ngxDirectiveThirdParty chunkin_max_chunks_per_buf
 syn keyword ngxDirectiveThirdParty chunkin_resume
 
-" Circle GIF Module <http://wiki.nginx.org/NginxHttpCircleGifModule>
+" Circle GIF Module <https://github.com/evanmiller/nginx_circle_gif>
 " Generates simple circle images with the colors and size specified in the URL.
 syn keyword ngxDirectiveThirdParty circle_gif
 syn keyword ngxDirectiveThirdParty circle_gif_max_radius
 syn keyword ngxDirectiveThirdParty circle_gif_min_radius
 syn keyword ngxDirectiveThirdParty circle_gif_step_radius
 
-" Drizzle Module <http://github.com/chaoslawful/drizzle-nginx-module>
+" Drizzle Module <https://github.com/openresty/drizzle-nginx-module>
 " Make nginx talk directly to mysql, drizzle, and sqlite3 by libdrizzle.
 syn keyword ngxDirectiveThirdParty drizzle_connect_timeout
 syn keyword ngxDirectiveThirdParty drizzle_dbname
@@ -615,7 +615,7 @@ syn keyword ngxDirectiveThirdParty drizzle_recv_rows_timeout
 syn keyword ngxDirectiveThirdParty drizzle_send_query_timeout
 syn keyword ngxDirectiveThirdParty drizzle_server
 
-" Echo Module <http://wiki.nginx.org/NginxHttpEchoModule>
+" Echo Module <https://github.com/openresty/echo-nginx-module>
 " Brings 'echo', 'sleep', 'time', 'exec' and more shell-style goodies to Nginx config file.
 syn keyword ngxDirectiveThirdParty echo
 syn keyword ngxDirectiveThirdParty echo_after_body
@@ -640,13 +640,13 @@ syn keyword ngxDirectiveThirdParty echo_subrequest_async
 syn keyword ngxDirectiveThirdParty on_start
 syn keyword ngxDirectiveThirdParty on_stop
 
-" EY Balancer Module <http://github.com/ry/nginx-ey-balancer>
+" EY Balancer Module <https://github.com/ezmobius/nginx-ey-balancer>
 " Adds a request queue to Nginx that allows the limiting of concurrent requests passed to the upstream.
 syn keyword ngxDirectiveThirdParty max_connections
 syn keyword ngxDirectiveThirdParty max_connections_max_queue_length
 syn keyword ngxDirectiveThirdParty max_connections_queue_timeout
 
-" Fancy Indexes Module <https://connectical.com/projects/ngx-fancyindex/wiki>
+" Fancy Indexes Module <https://github.com/aperezdc/ngx-fancyindex>
 " Like the built-in autoindex module, but fancier.
 syn keyword ngxDirectiveThirdParty fancyindex
 syn keyword ngxDirectiveThirdParty fancyindex_exact_size
@@ -660,7 +660,7 @@ syn keyword ngxDirectiveThirdParty fancyindex_readme_mode
 " Country code lookups via the MaxMind GeoIP API.
 syn keyword ngxDirectiveThirdParty geoip_country_file
 
-" Headers More Module <http://wiki.nginx.org/NginxHttpHeadersMoreModule>
+" Headers More Module <https://github.com/openresty/headers-more-nginx-module>
 " Set and clear input and output headers...more than "add"!
 syn keyword ngxDirectiveThirdParty more_clear_headers
 syn keyword ngxDirectiveThirdParty more_clear_input_headers
@@ -675,7 +675,7 @@ syn keyword ngxDirectiveThirdParty push_message_timeout
 syn keyword ngxDirectiveThirdParty push_queue_messages
 syn keyword ngxDirectiveThirdParty push_sender
 
-" HTTP Redis Module <http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.1.tar.gz>>
+" HTTP Redis Module <https://www.nginx.com/resources/wiki/modules/redis/>
 " Redis <http://code.google.com/p/redis/> support.>
 syn keyword ngxDirectiveThirdParty redis_bind
 syn keyword ngxDirectiveThirdParty redis_buffer_size
@@ -685,7 +685,7 @@ syn keyword ngxDirectiveThirdParty redis_pass
 syn keyword ngxDirectiveThirdParty redis_read_timeout
 syn keyword ngxDirectiveThirdParty redis_send_timeout
 
-" HTTP JavaScript Module <http://wiki.github.com/kung-fu-tzu/ngx_http_js_module>
+" HTTP JavaScript Module <https://github.com/peter-leonov/ngx_http_js_module>
 " Embedding SpiderMonkey. Nearly full port on Perl module.
 syn keyword ngxDirectiveThirdParty js
 syn keyword ngxDirectiveThirdParty js_filter
@@ -765,7 +765,7 @@ syn keyword ngxDirectiveThirdParty lua_max_pending_timers
 syn keyword ngxDirectiveThirdParty lua_max_running_timers
 
 
-" Memc Module <http://wiki.nginx.org/NginxHttpMemcModule>
+" Memc Module <https://github.com/openresty/memc-nginx-module>
 " An extended version of the standard memcached module that supports set, add, delete, and many more memcached commands.
 syn keyword ngxDirectiveThirdParty memc_buffer_size
 syn keyword ngxDirectiveThirdParty memc_cmds_allowed
@@ -789,16 +789,16 @@ syn keyword ngxDirectiveThirdParty mogilefs_read_timeout
 syn keyword ngxDirectiveThirdParty mogilefs_send_timeout
 syn keyword ngxDirectiveThirdParty mogilefs_tracker
 
-" MP4 Streaming Lite Module <http://wiki.nginx.org/NginxMP4StreamingLite>
+" MP4 Streaming Lite Module <https://www.nginx.com/resources/wiki/modules/mp4_streaming/>
 " Will seek to a certain time within H.264/MP4 files when provided with a 'start' parameter in the URL.
 syn keyword ngxDirectiveThirdParty mp4
 
-" Nginx Notice Module <http://xph.us/software/nginx-notice/>
+" Nginx Notice Module <https://github.com/kr/nginx-notice>
 " Serve static file to POST requests.
 syn keyword ngxDirectiveThirdParty notice
 syn keyword ngxDirectiveThirdParty notice_type
 
-" Phusion Passenger <http://www.modrails.com/documentation.html>
+" Phusion Passenger <https://www.phusionpassenger.com/>
 " Easy and robust deployment of Ruby on Rails application on Apache and Nginx webservers.
 syn keyword ngxDirectiveThirdParty passenger_base_uri
 syn keyword ngxDirectiveThirdParty passenger_default_user
@@ -817,26 +817,26 @@ syn keyword ngxDirectiveThirdParty rails_env
 syn keyword ngxDirectiveThirdParty rails_framework_spawner_idle_time
 syn keyword ngxDirectiveThirdParty rails_spawn_method
 
-" RDS JSON Module <http://github.com/agentzh/rds-json-nginx-module>
+" RDS JSON Module <https://github.com/openresty/rds-json-nginx-module>
 " Help ngx_drizzle and other DBD modules emit JSON data.
 syn keyword ngxDirectiveThirdParty rds_json
 syn keyword ngxDirectiveThirdParty rds_json_content_type
 syn keyword ngxDirectiveThirdParty rds_json_format
 syn keyword ngxDirectiveThirdParty rds_json_ret
 
-" RRD Graph Module <http://wiki.nginx.org/NginxNgx_rrd_graph>
+" RRD Graph Module <https://www.nginx.com/resources/wiki/modules/rrd_graph/>
 " This module provides an HTTP interface to RRDtool's graphing facilities.
 syn keyword ngxDirectiveThirdParty rrd_graph
 syn keyword ngxDirectiveThirdParty rrd_graph_root
 
-" Secure Download <http://wiki.nginx.org/NginxHttpSecureDownload>
+" Secure Download <https://www.nginx.com/resources/wiki/modules/secure_download/>
 " Create expiring links.
 syn keyword ngxDirectiveThirdParty secure_download
 syn keyword ngxDirectiveThirdParty secure_download_fail_location
 syn keyword ngxDirectiveThirdParty secure_download_path_mode
 syn keyword ngxDirectiveThirdParty secure_download_secret
 
-" SlowFS Cache Module <http://labs.frickle.com/nginx_ngx_slowfs_cache/>
+" SlowFS Cache Module <https://github.com/FRiCKLE/ngx_slowfs_cache/>
 " Module adding ability to cache static files.
 syn keyword ngxDirectiveThirdParty slowfs_big_file_size
 syn keyword ngxDirectiveThirdParty slowfs_cache
@@ -847,16 +847,16 @@ syn keyword ngxDirectiveThirdParty slowfs_cache_purge
 syn keyword ngxDirectiveThirdParty slowfs_cache_valid
 syn keyword ngxDirectiveThirdParty slowfs_temp_path
 
-" Strip Module <http://wiki.nginx.org/NginxHttpStripModule>
+" Strip Module <https://github.com/evanmiller/mod_strip>
 " Whitespace remover.
 syn keyword ngxDirectiveThirdParty strip
 
-" Substitutions Module <http://wiki.nginx.org/NginxHttpSubsModule>
+" Substitutions Module <https://www.nginx.com/resources/wiki/modules/substitutions/>
 " A filter module which can do both regular expression and fixed string substitutions on response bodies.
 syn keyword ngxDirectiveThirdParty subs_filter
 syn keyword ngxDirectiveThirdParty subs_filter_types
 
-" Supervisord Module <http://labs.frickle.com/nginx_ngx_supervisord/>
+" Supervisord Module <https://github.com/FRiCKLE/ngx_supervisord/>
 " Module providing nginx with API to communicate with supervisord and manage (start/stop) backends on-demand.
 syn keyword ngxDirectiveThirdParty supervisord
 syn keyword ngxDirectiveThirdParty supervisord_inherit_backend_status
@@ -864,7 +864,7 @@ syn keyword ngxDirectiveThirdParty supervisord_name
 syn keyword ngxDirectiveThirdParty supervisord_start
 syn keyword ngxDirectiveThirdParty supervisord_stop
 
-" Upload Module <http://www.grid.net.ru/nginx/upload.en.html>
+" Upload Module <https://www.nginx.com/resources/wiki/modules/upload/>
 " Parses multipart/form-data allowing arbitrary handling of uploaded files.
 syn keyword ngxDirectiveThirdParty upload_aggregate_form_field
 syn keyword ngxDirectiveThirdParty upload_buffer_size
@@ -880,7 +880,7 @@ syn keyword ngxDirectiveThirdParty upload_set_form_field
 syn keyword ngxDirectiveThirdParty upload_store
 syn keyword ngxDirectiveThirdParty upload_store_access
 
-" Upload Progress Module <http://wiki.nginx.org/NginxHttpUploadProgressModule>
+" Upload Progress Module <https://www.nginx.com/resources/wiki/modules/upload_progress/>
 " Tracks and reports upload progress.
 syn keyword ngxDirectiveThirdParty report_uploads
 syn keyword ngxDirectiveThirdParty track_uploads
@@ -890,12 +890,12 @@ syn keyword ngxDirectiveThirdParty upload_progress_header
 syn keyword ngxDirectiveThirdParty upload_progress_json_output
 syn keyword ngxDirectiveThirdParty upload_progress_template
 
-" Upstream Fair Balancer <http://wiki.nginx.org/NginxHttpUpstreamFairModule>
+" Upstream Fair Balancer <https://www.nginx.com/resources/wiki/modules/fair_balancer/>
 " Sends an incoming request to the least-busy backend server, rather than distributing requests round-robin.
 syn keyword ngxDirectiveThirdParty fair
 syn keyword ngxDirectiveThirdParty upstream_fair_shm_size
 
-" Upstream Consistent Hash <http://wiki.nginx.org/NginxHttpUpstreamConsistentHash>
+" Upstream Consistent Hash " <https://www.nginx.com/resources/wiki/modules/consistent_hash/>
 " Select backend based on Consistent hash ring.
 syn keyword ngxDirectiveThirdParty consistent_hash
 
@@ -904,7 +904,7 @@ syn keyword ngxDirectiveThirdParty consistent_hash
 syn keyword ngxDirectiveThirdParty hash
 syn keyword ngxDirectiveThirdParty hash_again
 
-" XSS Module <http://github.com/agentzh/xss-nginx-module>
+" XSS Module <https://github.com/openresty/xss-nginx-module>
 " Native support for cross-site scripting (XSS) in an nginx.
 syn keyword ngxDirectiveThirdParty xss_callback_arg
 syn keyword ngxDirectiveThirdParty xss_get
