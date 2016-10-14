@@ -233,6 +233,7 @@ syn keyword ngxDirective limit_req_zone
 syn keyword ngxDirective lingering_close
 syn keyword ngxDirective lingering_time
 syn keyword ngxDirective lingering_timeout
+syn keyword ngxDirective load_module
 syn keyword ngxDirective lock_file
 syn keyword ngxDirective log_format
 syn keyword ngxDirective log_not_found
@@ -461,6 +462,7 @@ syn keyword ngxDirective sub_filter_once
 syn keyword ngxDirective sub_filter_types
 syn keyword ngxDirective tcp_nodelay
 syn keyword ngxDirective tcp_nopush
+syn keyword ngxDirective thread_pool
 syn keyword ngxDirective thread_stack_size
 syn keyword ngxDirective timeout
 syn keyword ngxDirective timer_resolution
