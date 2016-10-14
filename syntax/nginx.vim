@@ -563,7 +563,7 @@ syn keyword ngxDirective xslt_types
 " Parses the Accept-Language header and gives the most suitable locale from a list of supported locales.
 syn keyword ngxDirectiveThirdParty set_from_accept_language
 
-" Access Key Module <http://wiki.nginx.org/NginxHttpAccessKeyModule>
+" Access Key Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpAccessKeyModule>
 " Denies access unless the request URL contains an access key.
 syn keyword ngxDirectiveThirdParty accesskey
 syn keyword ngxDirectiveThirdParty accesskey_arg
@@ -590,7 +590,7 @@ syn keyword ngxDirectiveThirdParty brotli_min_length
 syn keyword ngxDirectiveThirdParty fastcgi_cache_purge
 syn keyword ngxDirectiveThirdParty proxy_cache_purge
 
-" Chunkin Module <http://wiki.nginx.org/NginxHttpChunkinModule>
+" Chunkin Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpChunkinModule>
 " HTTP 1.1 chunked-encoding request body support for Nginx.
 syn keyword ngxDirectiveThirdParty chunkin
 syn keyword ngxDirectiveThirdParty chunkin_keepalive
@@ -637,7 +637,7 @@ syn keyword ngxDirectiveThirdParty echo_sleep
 syn keyword ngxDirectiveThirdParty echo_subrequest
 syn keyword ngxDirectiveThirdParty echo_subrequest_async
 
-" Events Module <http://docs.dutov.org/nginx_modules_events_en.html>
+" Events Module (DEPRECATED) <http://docs.dutov.org/nginx_modules_events_en.html>
 " Provides options for start/stop events.
 syn keyword ngxDirectiveThirdParty on_start
 syn keyword ngxDirectiveThirdParty on_stop
@@ -669,7 +669,7 @@ syn keyword ngxDirectiveThirdParty more_clear_input_headers
 syn keyword ngxDirectiveThirdParty more_set_headers
 syn keyword ngxDirectiveThirdParty more_set_input_headers
 
-" HTTP Push Module <http://pushmodule.slact.net/>
+" HTTP Push Module (DEPRECATED) <http://pushmodule.slact.net/>
 " Turn Nginx into an adept long-polling HTTP Push (Comet) server.
 syn keyword ngxDirectiveThirdParty push_buffer_size
 syn keyword ngxDirectiveThirdParty push_listener
@@ -698,7 +698,7 @@ syn keyword ngxDirectiveThirdParty js_require
 syn keyword ngxDirectiveThirdParty js_set
 syn keyword ngxDirectiveThirdParty js_utf8
 
-" Log Request Speed <http://wiki.nginx.org/NginxHttpLogRequestSpeed>
+" Log Request Speed (DEPRECATED) <http://wiki.nginx.org/NginxHttpLogRequestSpeed>
 " Log the time it took to process each request.
 syn keyword ngxDirectiveThirdParty log_request_speed_filter
 syn keyword ngxDirectiveThirdParty log_request_speed_filter_timeout
@@ -897,11 +897,11 @@ syn keyword ngxDirectiveThirdParty upload_progress_template
 syn keyword ngxDirectiveThirdParty fair
 syn keyword ngxDirectiveThirdParty upstream_fair_shm_size
 
-" Upstream Consistent Hash " <https://www.nginx.com/resources/wiki/modules/consistent_hash/>
+" Upstream Consistent Hash <https://www.nginx.com/resources/wiki/modules/consistent_hash/>
 " Select backend based on Consistent hash ring.
 syn keyword ngxDirectiveThirdParty consistent_hash
 
-" Upstream Hash Module <http://wiki.nginx.org/NginxHttpUpstreamRequestHashModule>
+" Upstream Hash Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpUpstreamRequestHashModule>
 " Provides simple upstream load distribution by hashing a configurable variable.
 syn keyword ngxDirectiveThirdParty hash
 syn keyword ngxDirectiveThirdParty hash_again
