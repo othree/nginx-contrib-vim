@@ -5,6 +5,13 @@ if exists("b:current_syntax")
   finish
 end
 
+" Patch 7.4.1142
+if has("win32")
+  syn iskeyword @,48-57,_,128-167,224-235,.,/,:
+else
+  syn iskeyword @,48-57,192-255,.,/,:
+endif
+
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
