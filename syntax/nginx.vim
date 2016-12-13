@@ -9,7 +9,7 @@ end
 if has("win32")
   syn iskeyword @,48-57,_,128-167,224-235,.,/,:
 else
-  syn iskeyword @,48-57,192-255,.,/,:
+  syn iskeyword @,48-57,_,192-255,.,/,:
 endif
 
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
