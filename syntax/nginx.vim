@@ -12,6 +12,8 @@ else
   syn iskeyword @,48-57,_,192-255,.,/,:
 endif
 
+setlocal commentstring=#\ %s
+
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
