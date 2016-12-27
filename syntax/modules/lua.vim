@@ -1,6 +1,7 @@
 " Lua Module <https://github.com/openresty/lua-nginx-module>
 " Embed the Power of Lua into NGINX HTTP servers 
 syn keyword ngxDirectiveThirdParty lua_use_default_type
+syn keyword ngxDirectiveThirdParty lua_malloc_trim
 syn keyword ngxDirectiveThirdParty lua_code_cache
 syn keyword ngxDirectiveThirdParty lua_regex_cache_max_entries
 syn keyword ngxDirectiveThirdParty lua_regex_match_limit
@@ -38,6 +39,10 @@ syn keyword ngxDirectiveThirdParty balancer_by_lua_file
 syn keyword ngxDirectiveThirdParty lua_need_request_body
 syn keyword ngxDirectiveThirdParty ssl_certificate_by_lua_block
 syn keyword ngxDirectiveThirdParty ssl_certificate_by_lua_file
+syn keyword ngxDirectiveThirdParty ssl_session_fetch_by_lua_block
+syn keyword ngxDirectiveThirdParty ssl_session_fetch_by_lua_file
+syn keyword ngxDirectiveThirdParty ssl_session_store_by_lua_block
+syn keyword ngxDirectiveThirdParty ssl_session_store_by_lua_file
 syn keyword ngxDirectiveThirdParty lua_shared_dict
 syn keyword ngxDirectiveThirdParty lua_socket_connect_timeout
 syn keyword ngxDirectiveThirdParty lua_socket_send_timeout
