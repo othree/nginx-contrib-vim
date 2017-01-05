@@ -100,6 +100,7 @@ syn keyword ngxDirective auth_request
 syn keyword ngxDirective auth_request_set
 syn keyword ngxDirective autoindex
 syn keyword ngxDirective autoindex_exact_size
+syn keyword ngxDirective autoindex_format
 syn keyword ngxDirective autoindex_localtime
 syn keyword ngxDirective charset
 syn keyword ngxDirective charset_types
