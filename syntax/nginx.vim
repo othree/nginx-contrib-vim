@@ -103,6 +103,7 @@ syn keyword ngxDirective autoindex_exact_size
 syn keyword ngxDirective autoindex_format
 syn keyword ngxDirective autoindex_localtime
 syn keyword ngxDirective charset
+syn keyword ngxDirective charset_map
 syn keyword ngxDirective charset_types
 syn keyword ngxDirective chunked_transfer_encoding
 syn keyword ngxDirective client_body_buffer_size
