@@ -74,6 +74,7 @@ syn keyword ngxDirectiveDeprecated optimize_server_names
 syn keyword ngxDirectiveDeprecated satisfy_any
 syn keyword ngxDirectiveDeprecated so_keepalive
 
+syn keyword ngxDirective absolute_redirect
 syn keyword ngxDirective accept_mutex
 syn keyword ngxDirective accept_mutex_delay
 syn keyword ngxDirective acceptex_read
@@ -83,6 +84,7 @@ syn keyword ngxDirective add_before_body
 syn keyword ngxDirective add_header
 syn keyword ngxDirective addition_types
 syn keyword ngxDirective aio
+syn keyword ngxDirective aio_write
 syn keyword ngxDirective alias
 syn keyword ngxDirective allow
 syn keyword ngxDirective ancient_browser
