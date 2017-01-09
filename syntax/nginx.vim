@@ -547,6 +547,7 @@ syn keyword ngxDirective uwsgi_cache_lock_timeout
 syn keyword ngxDirective uwsgi_cache_methods
 syn keyword ngxDirective uwsgi_cache_min_uses
 syn keyword ngxDirective uwsgi_cache_path
+syn keyword ngxDirective uwsgi_cache_purge
 syn keyword ngxDirective uwsgi_cache_revalidate
 syn keyword ngxDirective uwsgi_cache_use_stale
 syn keyword ngxDirective uwsgi_cache_valid
@@ -556,6 +557,7 @@ syn keyword ngxDirective uwsgi_hide_header
 syn keyword ngxDirective uwsgi_ignore_client_abort
 syn keyword ngxDirective uwsgi_ignore_headers
 syn keyword ngxDirective uwsgi_intercept_errors
+syn keyword ngxDirective uwsgi_limit_rate
 syn keyword ngxDirective uwsgi_max_temp_file_size
 syn keyword ngxDirective uwsgi_modifier1
 syn keyword ngxDirective uwsgi_modifier2
