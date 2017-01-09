@@ -220,6 +220,7 @@ syn keyword ngxDirective gzip_vary
 syn keyword ngxDirective gzip_window
 syn keyword ngxDirective hash
 syn keyword ngxDirective health_check
+syn keyword ngxDirective health_check_timeout
 syn keyword ngxDirective hls
 syn keyword ngxDirective hls_buffers
 syn keyword ngxDirective hls_forward_args
