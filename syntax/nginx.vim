@@ -451,6 +451,7 @@ syn keyword ngxDirective session_log
 syn keyword ngxDirective session_log_format
 syn keyword ngxDirective session_log_zone
 syn keyword ngxDirective set_real_ip_from
+syn keyword ngxDirective slice
 syn keyword ngxDirective smtp_auth
 syn keyword ngxDirective smtp_capabilities
 syn keyword ngxDirective smtp_client_buffer
