@@ -268,6 +268,7 @@ syn keyword ngxDirective max_ranges
 syn keyword ngxDirective memcached_bind
 syn keyword ngxDirective memcached_buffer_size
 syn keyword ngxDirective memcached_connect_timeout
+syn keyword ngxDirective memcached_force_ranges
 syn keyword ngxDirective memcached_gzip_flag
 syn keyword ngxDirective memcached_next_upstream
 syn keyword ngxDirective memcached_next_upstream_timeout
