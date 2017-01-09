@@ -217,13 +217,14 @@ syn keyword ngxDirective gzip_types
 syn keyword ngxDirective gzip_vary
 syn keyword ngxDirective gzip_window
 syn keyword ngxDirective hash
-syn keyword ngxDirective http2 " Not a real directive
+syn keyword ngxDirective health_check
 syn keyword ngxDirective hls
 syn keyword ngxDirective hls_buffers
 syn keyword ngxDirective hls_forward_args
 syn keyword ngxDirective hls_fragment
 syn keyword ngxDirective hls_mp4_buffer_size
 syn keyword ngxDirective hls_mp4_max_buffer_size
+syn keyword ngxDirective http2 " Not a real directive
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
@@ -250,6 +251,7 @@ syn keyword ngxDirective kqueue_changes
 syn keyword ngxDirective kqueue_events
 syn keyword ngxDirective large_client_header_buffers
 syn keyword ngxDirective least_conn
+syn keyword ngxDirective least_time
 syn keyword ngxDirective limit_conn
 syn keyword ngxDirective limit_conn_log_level
 syn keyword ngxDirective limit_conn_status
@@ -270,6 +272,7 @@ syn keyword ngxDirective log_not_found
 syn keyword ngxDirective log_subrequest
 syn keyword ngxDirective map_hash_bucket_size
 syn keyword ngxDirective map_hash_max_size
+syn keyword ngxDirective match
 syn keyword ngxDirective master_process
 syn keyword ngxDirective max_ranges
 syn keyword ngxDirective memcached_bind
@@ -294,6 +297,7 @@ syn keyword ngxDirective mp4_limit_rate_after
 syn keyword ngxDirective msie_padding
 syn keyword ngxDirective msie_refresh
 syn keyword ngxDirective multi_accept
+syn keyword ngxDirective ntlm
 syn keyword ngxDirective open_file_cache
 syn keyword ngxDirective open_file_cache_errors
 syn keyword ngxDirective open_file_cache_events
@@ -384,6 +388,7 @@ syn keyword ngxDirective proxy_store_access
 syn keyword ngxDirective proxy_temp_file_write_size
 syn keyword ngxDirective proxy_temp_path
 syn keyword ngxDirective proxy_timeout
+syn keyword ngxDirective queue
 syn keyword ngxDirective random_index
 syn keyword ngxDirective read_ahead
 syn keyword ngxDirective real_ip_header
@@ -496,9 +501,12 @@ syn keyword ngxDirective ssl_trusted_certificate
 syn keyword ngxDirective ssl_verify_client
 syn keyword ngxDirective ssl_verify_depth
 syn keyword ngxDirective starttls
+syn keyword ngxDirective state
 syn keyword ngxDirective status
 syn keyword ngxDirective status_format
 syn keyword ngxDirective status_zone
+syn keyword ngxDirective sticky
+syn keyword ngxDirective sticky_cookie_insert
 syn keyword ngxDirective stub_status
 syn keyword ngxDirective sub_filter
 syn keyword ngxDirective sub_filter_last_modified
@@ -600,6 +608,7 @@ syn keyword ngxDirective xslt_param
 syn keyword ngxDirective xslt_string_param
 syn keyword ngxDirective xslt_stylesheet
 syn keyword ngxDirective xslt_types
+syn keyword ngxDirective zone
 
 " 3rd party module list:
 " https://www.nginx.com/resources/wiki/modules/
