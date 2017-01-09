@@ -514,6 +514,7 @@ syn keyword ngxDirective types_hash_bucket_size
 syn keyword ngxDirective types_hash_max_size
 syn keyword ngxDirective underscores_in_headers
 syn keyword ngxDirective uninitialized_variable_warn
+syn keyword ngxDirective upstream_conf
 syn keyword ngxDirective use
 syn keyword ngxDirective user
 syn keyword ngxDirective userid
