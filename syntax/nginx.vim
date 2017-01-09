@@ -73,6 +73,14 @@ syn keyword ngxDirectiveDeprecated open_file_cache_retest
 syn keyword ngxDirectiveDeprecated optimize_server_names
 syn keyword ngxDirectiveDeprecated satisfy_any
 syn keyword ngxDirectiveDeprecated so_keepalive
+syn keyword ngxDirectiveDeprecated spdy_chunk_size
+syn keyword ngxDirectiveDeprecated spdy_headers_comp
+syn keyword ngxDirectiveDeprecated spdy_keepalive_timeout
+syn keyword ngxDirectiveDeprecated spdy_max_concurrent_streams
+syn keyword ngxDirectiveDeprecated spdy_pool_size
+syn keyword ngxDirectiveDeprecated spdy_recv_buffer_size
+syn keyword ngxDirectiveDeprecated spdy_recv_timeout
+syn keyword ngxDirectiveDeprecated spdy_streams_index_size
 
 syn keyword ngxDirective absolute_redirect
 syn keyword ngxDirective accept_mutex
@@ -457,14 +465,6 @@ syn keyword ngxDirective smtp_capabilities
 syn keyword ngxDirective smtp_client_buffer
 syn keyword ngxDirective smtp_greeting_delay
 syn keyword ngxDirective source_charset
-syn keyword ngxDirective spdy_chunk_size
-syn keyword ngxDirective spdy_headers_comp
-syn keyword ngxDirective spdy_keepalive_timeout
-syn keyword ngxDirective spdy_max_concurrent_streams
-syn keyword ngxDirective spdy_pool_size
-syn keyword ngxDirective spdy_recv_buffer_size
-syn keyword ngxDirective spdy_recv_timeout
-syn keyword ngxDirective spdy_streams_index_size
 syn keyword ngxDirective ssi
 syn keyword ngxDirective ssi_ignore_recycled_buffers
 syn keyword ngxDirective ssi_last_modified
