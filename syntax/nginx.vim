@@ -30,6 +30,7 @@ syn keyword ngxDirectiveBlock http
 syn keyword ngxDirectiveBlock mail
 syn keyword ngxDirectiveBlock events
 syn keyword ngxDirectiveBlock server
+syn keyword ngxDirectiveBlock stream
 syn keyword ngxDirectiveBlock types
 syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath,ngxString skipwhite
 syn match   ngxLocationNamedLoc /@\w\+/
@@ -328,6 +329,8 @@ syn keyword ngxDirective port_in_redirect
 syn keyword ngxDirective post_acceptex
 syn keyword ngxDirective postpone_gzipping
 syn keyword ngxDirective postpone_output
+syn keyword ngxDirective preread_buffer_size
+syn keyword ngxDirective preread_timeout
 syn keyword ngxDirective protocol nextgroup=ngxMailProtocol skipwhite
 syn keyword ngxMailProtocol imap pop3 smtp
 syn keyword ngxDirective proxy
@@ -374,6 +377,7 @@ syn keyword ngxDirective proxy_pass_error_message
 syn keyword ngxDirective proxy_pass_header
 syn keyword ngxDirective proxy_pass_request_body
 syn keyword ngxDirective proxy_pass_request_headers
+syn keyword ngxDirective proxy_protocol_timeout
 syn keyword ngxDirective proxy_read_timeout
 syn keyword ngxDirective proxy_redirect
 syn keyword ngxDirective proxy_request_buffering
