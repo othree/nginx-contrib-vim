@@ -101,6 +101,7 @@ syn keyword ngxDirective auth_basic
 syn keyword ngxDirective auth_basic_user_file
 syn keyword ngxDirective auth_http
 syn keyword ngxDirective auth_http_header
+syn keyword ngxDirective auth_http_pass_client_cert
 syn keyword ngxDirective auth_http_timeout
 syn keyword ngxDirective auth_jwt
 syn keyword ngxDirective auth_jwt_key_file
