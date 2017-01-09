@@ -224,6 +224,7 @@ syn keyword ngxDirective image_filter_interlace
 syn keyword ngxDirective image_filter_jpeg_quality
 syn keyword ngxDirective image_filter_sharpen
 syn keyword ngxDirective image_filter_transparency
+syn keyword ngxDirective image_filter_webp_quality
 syn keyword ngxDirective imap_auth
 syn keyword ngxDirective imap_capabilities
 syn keyword ngxDirective imap_client_buffer
