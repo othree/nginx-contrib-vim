@@ -361,6 +361,7 @@ syn keyword ngxDirective proxy_cache_valid
 syn keyword ngxDirective proxy_connect_timeout
 syn keyword ngxDirective proxy_cookie_domain
 syn keyword ngxDirective proxy_cookie_path
+syn keyword ngxDirective proxy_download_rate
 syn keyword ngxDirective proxy_force_ranges
 syn keyword ngxDirective proxy_headers_hash_bucket_size
 syn keyword ngxDirective proxy_headers_hash_max_size
@@ -380,10 +381,12 @@ syn keyword ngxDirective proxy_pass_error_message
 syn keyword ngxDirective proxy_pass_header
 syn keyword ngxDirective proxy_pass_request_body
 syn keyword ngxDirective proxy_pass_request_headers
+syn keyword ngxDirective proxy_protocol
 syn keyword ngxDirective proxy_protocol_timeout
 syn keyword ngxDirective proxy_read_timeout
 syn keyword ngxDirective proxy_redirect
 syn keyword ngxDirective proxy_request_buffering
+syn keyword ngxDirective proxy_responses
 syn keyword ngxDirective proxy_send_lowat
 syn keyword ngxDirective proxy_send_timeout
 syn keyword ngxDirective proxy_set_body
@@ -405,6 +408,7 @@ syn keyword ngxDirective proxy_store_access
 syn keyword ngxDirective proxy_temp_file_write_size
 syn keyword ngxDirective proxy_temp_path
 syn keyword ngxDirective proxy_timeout
+syn keyword ngxDirective proxy_upload_rate
 syn keyword ngxDirective queue
 syn keyword ngxDirective random_index
 syn keyword ngxDirective read_ahead
