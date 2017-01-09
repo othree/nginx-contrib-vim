@@ -150,6 +150,7 @@ syn keyword ngxDirective fastcgi_cache_key
 syn keyword ngxDirective fastcgi_cache_lock
 syn keyword ngxDirective fastcgi_cache_lock_age
 syn keyword ngxDirective fastcgi_cache_lock_timeout
+syn keyword ngxDirective fastcgi_cache_max_range_offset
 syn keyword ngxDirective fastcgi_cache_methods
 syn keyword ngxDirective fastcgi_cache_min_uses
 syn keyword ngxDirective fastcgi_cache_path
