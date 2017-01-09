@@ -403,10 +403,13 @@ syn keyword ngxDirective scgi_cache
 syn keyword ngxDirective scgi_cache_bypass
 syn keyword ngxDirective scgi_cache_key
 syn keyword ngxDirective scgi_cache_lock
+syn keyword ngxDirective scgi_cache_lock_age
 syn keyword ngxDirective scgi_cache_lock_timeout
+syn keyword ngxDirective scgi_cache_max_range_offset
 syn keyword ngxDirective scgi_cache_methods
 syn keyword ngxDirective scgi_cache_min_uses
 syn keyword ngxDirective scgi_cache_path
+syn keyword ngxDirective scgi_cache_purge
 syn keyword ngxDirective scgi_cache_revalidate
 syn keyword ngxDirective scgi_cache_use_stale
 syn keyword ngxDirective scgi_cache_valid
@@ -416,6 +419,7 @@ syn keyword ngxDirective scgi_hide_header
 syn keyword ngxDirective scgi_ignore_client_abort
 syn keyword ngxDirective scgi_ignore_headers
 syn keyword ngxDirective scgi_intercept_errors
+syn keyword ngxDirective scgi_limit_rate
 syn keyword ngxDirective scgi_max_temp_file_size
 syn keyword ngxDirective scgi_next_upstream
 syn keyword ngxDirective scgi_next_upstream_timeout
@@ -426,6 +430,7 @@ syn keyword ngxDirective scgi_pass_header
 syn keyword ngxDirective scgi_pass_request_body
 syn keyword ngxDirective scgi_pass_request_headers
 syn keyword ngxDirective scgi_read_timeout
+syn keyword ngxDirective scgi_request_buffering
 syn keyword ngxDirective scgi_send_timeout
 syn keyword ngxDirective scgi_store
 syn keyword ngxDirective scgi_store_access
