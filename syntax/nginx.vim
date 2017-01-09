@@ -210,6 +210,12 @@ syn keyword ngxDirective gzip_vary
 syn keyword ngxDirective gzip_window
 syn keyword ngxDirective hash
 syn keyword ngxDirective http2 " Not a real directive
+syn keyword ngxDirective hls
+syn keyword ngxDirective hls_buffers
+syn keyword ngxDirective hls_forward_args
+syn keyword ngxDirective hls_fragment
+syn keyword ngxDirective hls_mp4_buffer_size
+syn keyword ngxDirective hls_mp4_max_buffer_size
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
