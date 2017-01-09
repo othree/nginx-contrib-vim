@@ -137,6 +137,8 @@ syn keyword ngxDirective error_log
 syn keyword ngxDirective etag
 syn keyword ngxDirective eventport_events
 syn keyword ngxDirective expires
+syn keyword ngxDirective f4f
+syn keyword ngxDirective f4f_buffer_size
 syn keyword ngxDirective fastcgi_bind
 syn keyword ngxDirective fastcgi_buffer_size
 syn keyword ngxDirective fastcgi_buffering
