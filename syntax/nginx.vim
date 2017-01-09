@@ -391,7 +391,7 @@ syn keyword ngxDirective proxy_ssl_ciphers
 syn keyword ngxDirective proxy_ssl_crl
 syn keyword ngxDirective proxy_ssl_name
 syn keyword ngxDirective proxy_ssl_password_file
-syn keyword ngxDirective proxy_ssl_protocols
+syn keyword ngxDirective proxy_ssl_protocols nextgroup=ngxSSLProtocol skipwhite
 syn keyword ngxDirective proxy_ssl_server_name
 syn keyword ngxDirective proxy_ssl_session_reuse
 syn keyword ngxDirective proxy_ssl_trusted_certificate
@@ -502,7 +502,8 @@ syn keyword ngxDirective ssl_ecdh_curve
 syn keyword ngxDirective ssl_engine
 syn keyword ngxDirective ssl_password_file
 syn keyword ngxDirective ssl_prefer_server_ciphers
-syn keyword ngxDirective ssl_protocols
+syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite
+syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2
 syn keyword ngxDirective ssl_session_cache
 syn keyword ngxDirective ssl_session_ticket_key
 syn keyword ngxDirective ssl_session_tickets
@@ -593,7 +594,7 @@ syn keyword ngxDirective uwsgi_ssl_ciphers
 syn keyword ngxDirective uwsgi_ssl_crl
 syn keyword ngxDirective uwsgi_ssl_name
 syn keyword ngxDirective uwsgi_ssl_password_file
-syn keyword ngxDirective uwsgi_ssl_protocols
+syn keyword ngxDirective uwsgi_ssl_protocols nextgroup=ngxSSLProtocol skipwhite
 syn keyword ngxDirective uwsgi_ssl_server_name
 syn keyword ngxDirective uwsgi_ssl_session_reuse
 syn keyword ngxDirective uwsgi_ssl_trusted_certificate
@@ -872,7 +873,7 @@ syn keyword ngxDirectiveThirdParty lua_socket_keepalive_timeout
 syn keyword ngxDirectiveThirdParty lua_socket_log_errors
 syn keyword ngxDirectiveThirdParty lua_ssl_ciphers
 syn keyword ngxDirectiveThirdParty lua_ssl_crl
-syn keyword ngxDirectiveThirdParty lua_ssl_protocols
+syn keyword ngxDirectiveThirdParty lua_ssl_protocols nextgroup=ngxSSLProtocol skipwhite
 syn keyword ngxDirectiveThirdParty lua_ssl_trusted_certificate
 syn keyword ngxDirectiveThirdParty lua_ssl_verify_depth
 syn keyword ngxDirectiveThirdParty lua_http10_buffering
