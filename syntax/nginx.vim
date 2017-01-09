@@ -496,6 +496,9 @@ syn keyword ngxDirective ssl_trusted_certificate
 syn keyword ngxDirective ssl_verify_client
 syn keyword ngxDirective ssl_verify_depth
 syn keyword ngxDirective starttls
+syn keyword ngxDirective status
+syn keyword ngxDirective status_format
+syn keyword ngxDirective status_zone
 syn keyword ngxDirective stub_status
 syn keyword ngxDirective sub_filter
 syn keyword ngxDirective sub_filter_last_modified
