@@ -507,6 +507,7 @@ syn keyword ngxDirective ssl_crl
 syn keyword ngxDirective ssl_dhparam
 syn keyword ngxDirective ssl_ecdh_curve
 syn keyword ngxDirective ssl_engine
+syn keyword ngxDirective ssl_handshake_timeout
 syn keyword ngxDirective ssl_password_file
 syn keyword ngxDirective ssl_prefer_server_ciphers
 syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite
