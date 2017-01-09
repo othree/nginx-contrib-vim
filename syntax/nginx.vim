@@ -225,6 +225,15 @@ syn keyword ngxDirective hls_fragment
 syn keyword ngxDirective hls_mp4_buffer_size
 syn keyword ngxDirective hls_mp4_max_buffer_size
 syn keyword ngxDirective http2 " Not a real directive
+syn keyword ngxDirective http2_chunk_size
+syn keyword ngxDirective http2_body_preread_size
+syn keyword ngxDirective http2_idle_timeout
+syn keyword ngxDirective http2_max_concurrent_streams
+syn keyword ngxDirective http2_max_field_size
+syn keyword ngxDirective http2_max_header_size
+syn keyword ngxDirective http2_max_requests
+syn keyword ngxDirective http2_recv_buffer_size
+syn keyword ngxDirective http2_recv_timeout
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
