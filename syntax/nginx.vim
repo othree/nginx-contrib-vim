@@ -646,10 +646,10 @@ syn keyword ngxDirectiveThirdParty set_from_accept_language
 
 " Access Key Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpAccessKeyModule>
 " Denies access unless the request URL contains an access key.
-syn keyword ngxDirectiveThirdParty accesskey
-syn keyword ngxDirectiveThirdParty accesskey_arg
-syn keyword ngxDirectiveThirdParty accesskey_hashmethod
-syn keyword ngxDirectiveThirdParty accesskey_signature
+syn keyword ngxDirectiveDeprecated accesskey
+syn keyword ngxDirectiveDeprecated accesskey_arg
+syn keyword ngxDirectiveDeprecated accesskey_hashmethod
+syn keyword ngxDirectiveDeprecated accesskey_signature
 
 " Asynchronous FastCGI Module <https://github.com/rsms/afcgi>
 " Primarily a modified version of the Nginx FastCGI module which implements multiplexing of connections, allowing a single FastCGI server to handle many concurrent requests.
@@ -873,8 +873,8 @@ syn keyword ngxDirectiveThirdParty enhanced_memcached_read_timeout
 
 " Events Module (DEPRECATED) <http://docs.dutov.org/nginx_modules_events_en.html>
 " Provides options for start/stop events.
-syn keyword ngxDirectiveThirdParty on_start
-syn keyword ngxDirectiveThirdParty on_stop
+syn keyword ngxDirectiveDeprecated on_start
+syn keyword ngxDirectiveDeprecated on_stop
 
 " EY Balancer Module <https://github.com/ezmobius/nginx-ey-balancer>
 " Adds a request queue to Nginx that allows the limiting of concurrent requests passed to the upstream.
@@ -918,7 +918,7 @@ syn keyword ngxDirectiveThirdParty set_form_input_multi
 
 " GeoIP Module (DEPRECATED) <http://wiki.nginx.org/NginxHttp3rdPartyGeoIPModule>
 " Country code lookups via the MaxMind GeoIP API.
-syn keyword ngxDirectiveThirdParty geoip_country_file
+syn keyword ngxDirectiveDeprecated geoip_country_file
 
 " GeoIP 2 Module <https://github.com/leev/ngx_http_geoip2_module>
 " Creates variables with values from the maxmind geoip2 databases based on the client IP
@@ -1017,11 +1017,11 @@ syn keyword ngxDirectiveThirdParty js_utf8
 
 " HTTP Push Module (DEPRECATED) <http://pushmodule.slact.net/>
 " Turn Nginx into an adept long-polling HTTP Push (Comet) server.
-syn keyword ngxDirectiveThirdParty push_buffer_size
-syn keyword ngxDirectiveThirdParty push_listener
-syn keyword ngxDirectiveThirdParty push_message_timeout
-syn keyword ngxDirectiveThirdParty push_queue_messages
-syn keyword ngxDirectiveThirdParty push_sender
+syn keyword ngxDirectiveDeprecated push_buffer_size
+syn keyword ngxDirectiveDeprecated push_listener
+syn keyword ngxDirectiveDeprecated push_message_timeout
+syn keyword ngxDirectiveDeprecated push_queue_messages
+syn keyword ngxDirectiveDeprecated push_sender
 
 " HTTP Redis Module <https://www.nginx.com/resources/wiki/modules/redis/>
 " Redis <http://code.google.com/p/redis/> support.>
@@ -1071,8 +1071,8 @@ syn keyword ngxDirectiveThirdParty access_log_bypass_if
 
 " Log Request Speed (DEPRECATED) <http://wiki.nginx.org/NginxHttpLogRequestSpeed>
 " Log the time it took to process each request.
-syn keyword ngxDirectiveThirdParty log_request_speed_filter
-syn keyword ngxDirectiveThirdParty log_request_speed_filter_timeout
+syn keyword ngxDirectiveDeprecated log_request_speed_filter
+syn keyword ngxDirectiveDeprecated log_request_speed_filter_timeout
 
 " Log ZeroMQ Module <https://github.com/alticelabs/nginx-log-zmq>
 " ZeroMQ logger module for nginx
@@ -2036,8 +2036,8 @@ syn keyword ngxDirectiveThirdParty upstream_fair_shm_size
 
 " Upstream Hash Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpUpstreamRequestHashModule>
 " Provides simple upstream load distribution by hashing a configurable variable.
-syn keyword ngxDirectiveThirdParty hash
-syn keyword ngxDirectiveThirdParty hash_again
+syn keyword ngxDirectiveDeprecated hash
+syn keyword ngxDirectiveDeprecated hash_again
 
 " Upstream Domain Resolve Module <https://www.nginx.com/resources/wiki/modules/domain_resolve/>
 " A load-balancer that resolves an upstream domain name asynchronously.
