@@ -750,10 +750,10 @@ syn keyword ngxDirectiveThirdParty uwsgi_cache_purge
 
 " Chunkin Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpChunkinModule>
 " HTTP 1.1 chunked-encoding request body support for Nginx.
-syn keyword ngxDirectiveThirdParty chunkin
-syn keyword ngxDirectiveThirdParty chunkin_keepalive
-syn keyword ngxDirectiveThirdParty chunkin_max_chunks_per_buf
-syn keyword ngxDirectiveThirdParty chunkin_resume
+syn keyword ngxDirectiveDeprecated chunkin
+syn keyword ngxDirectiveDeprecated chunkin_keepalive
+syn keyword ngxDirectiveDeprecated chunkin_max_chunks_per_buf
+syn keyword ngxDirectiveDeprecated chunkin_resume
 
 " Circle GIF Module <https://github.com/evanmiller/nginx_circle_gif>
 " Generates simple circle images with the colors and size specified in the URL.
