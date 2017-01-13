@@ -955,7 +955,7 @@ syn keyword ngxDirectiveThirdParty http_accounting_interval
 syn keyword ngxDirectiveThirdParty http_accounting_perturb
 
 " Nginx Digest Authentication module <https://github.com/atomx/nginx-http-auth-digest>
-"  Digest Authentication for Nginx 
+" Digest Authentication for Nginx 
 syn keyword ngxDirectiveThirdParty auth_digest
 syn keyword ngxDirectiveThirdParty auth_digest_user_file
 syn keyword ngxDirectiveThirdParty auth_digest_timeout
@@ -1157,7 +1157,7 @@ syn keyword ngxDirectiveThirdParty lua_max_pending_timers
 syn keyword ngxDirectiveThirdParty lua_max_running_timers
 
 " MD5 Filter Module <https://github.com/kainswor/nginx_md5_filter>
-"  A content filter for nginx, which returns the md5 hash of the content otherwise returned. 
+" A content filter for nginx, which returns the md5 hash of the content otherwise returned. 
 syn keyword ngxDirectiveThirdParty md5_filter
 
 " Memc Module <https://github.com/openresty/memc-nginx-module>
@@ -1913,7 +1913,7 @@ syn keyword ngxDirectiveThirdParty supervisord_start
 syn keyword ngxDirectiveThirdParty supervisord_stop
 
 " Tarantool Upstream Module <https://github.com/tarantool/nginx_upstream_module>
-"  Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)  
+" Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)  
 syn keyword ngxDirectiveThirdParty tnt_pass
 syn keyword ngxDirectiveThirdParty tnt_http_methods
 syn keyword ngxDirectiveThirdParty tnt_http_rest_methods
