@@ -1,5 +1,5 @@
 " TCP Proxy Module <http://yaoweibin.github.io/nginx_tcp_proxy_module/>
-" Add the feature of tcp proxy with nginx, with health check and status monitor 
+" Add the feature of tcp proxy with nginx, with health check and status monitor
 syn keyword ngxDirectiveBlock tcp
 " syn keyword ngxDirectiveThirdParty server
 " syn keyword ngxDirectiveThirdParty listen

@@ -1,5 +1,5 @@
 " Lua Module <https://github.com/openresty/lua-nginx-module>
-" Embed the Power of Lua into NGINX HTTP servers 
+" Embed the Power of Lua into NGINX HTTP servers
 syn keyword ngxDirectiveThirdParty lua_use_default_type
 syn keyword ngxDirectiveThirdParty lua_malloc_trim
 syn keyword ngxDirectiveThirdParty lua_code_cache

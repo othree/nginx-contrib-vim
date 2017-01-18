@@ -1,5 +1,5 @@
 " HTTP Accounting Module <https://github.com/Lax/ngx_http_accounting_module>
-" Add traffic stat function to nginx. Useful for http accounting based on nginx configuration logic 
+" Add traffic stat function to nginx. Useful for http accounting based on nginx configuration logic
 syn keyword ngxDirectiveThirdParty http_accounting
 syn keyword ngxDirectiveThirdParty http_accounting_log
 syn keyword ngxDirectiveThirdParty http_accounting_id

@@ -690,13 +690,13 @@ syn keyword ngxDirectiveThirdParty fastcgi_upstream_fail_timeout
 syn keyword ngxDirectiveThirdParty fastcgi_upstream_max_fails
 
 " Akamai G2O Module <https://github.com/kaltura/nginx_mod_akamai_g2o>
-" Nginx Module for Authenticating Akamai G2O requests 
+" Nginx Module for Authenticating Akamai G2O requests
 syn keyword ngxDirectiveThirdParty g2o
 syn keyword ngxDirectiveThirdParty g2o_nonce
 syn keyword ngxDirectiveThirdParty g2o_key
 
 " Lua Module <https://github.com/alacner/nginx_lua_module>
-" You can be very simple to execute lua code for nginx 
+" You can be very simple to execute lua code for nginx
 syn keyword ngxDirectiveThirdParty lua_file
 
 " Array Variable Module <https://github.com/openresty/array-var-nginx-module>
@@ -714,7 +714,7 @@ syn keyword ngxDirectiveThirdParty ngx_hls_audio_track_output_format
 syn keyword ngxDirectiveThirdParty ngx_hls_audio_track_output_header
 
 " AWS Proxy Module <https://github.com/anomalizer/ngx_aws_auth>
-" Nginx module to proxy to authenticated AWS services 
+" Nginx module to proxy to authenticated AWS services
 syn keyword ngxDirectiveThirdParty aws_access_key
 syn keyword ngxDirectiveThirdParty aws_key_scope
 syn keyword ngxDirectiveThirdParty aws_signing_key
@@ -728,7 +728,7 @@ syn keyword ngxDirectiveThirdParty backtrace_log
 syn keyword ngxDirectiveThirdParty backtrace_max_stack_size
 
 " Brotli Module <https://github.com/google/ngx_brotli>
-" Nginx module for Brotli compression 
+" Nginx module for Brotli compression
 syn keyword ngxDirectiveThirdParty brotli_static
 syn keyword ngxDirectiveThirdParty brotli
 syn keyword ngxDirectiveThirdParty brotli_types
@@ -739,10 +739,10 @@ syn keyword ngxDirectiveThirdParty brotli_min_length
 
 " Cache Purge Module <https://github.com/FRiCKLE/ngx_cache_purge>
 " Adds ability to purge content from FastCGI, proxy, SCGI and uWSGI caches.
-syn keyword ngxDirectiveThirdParty fastcgi_cache_purge 
-syn keyword ngxDirectiveThirdParty proxy_cache_purge 
-" syn keyword ngxDirectiveThirdParty scgi_cache_purge 
-" syn keyword ngxDirectiveThirdParty uwsgi_cache_purge 
+syn keyword ngxDirectiveThirdParty fastcgi_cache_purge
+syn keyword ngxDirectiveThirdParty proxy_cache_purge
+" syn keyword ngxDirectiveThirdParty scgi_cache_purge
+" syn keyword ngxDirectiveThirdParty uwsgi_cache_purge
 
 " Chunkin Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpChunkinModule>
 " HTTP 1.1 chunked-encoding request body support for Nginx.
@@ -793,7 +793,7 @@ syn keyword ngxDirectiveThirdParty always_read_body
 syn keyword ngxDirectiveThirdParty shared_map
 syn keyword ngxDirectiveThirdParty write_page_size
 
-" Upstream Consistent Hash <https://www.nginx.com/resources/wiki/modules/consistent_hash/> 
+" Upstream Consistent Hash <https://www.nginx.com/resources/wiki/modules/consistent_hash/>
 " A load balancer that uses an internal consistent hash ring to select the right backend node.
 syn keyword ngxDirectiveThirdParty consistent_hash
 
@@ -818,7 +818,7 @@ syn keyword ngxDirectiveThirdParty drizzle_module_header
 syn keyword ngxDirectiveThirdParty drizzle_status
 
 " Dynamic ETags Module <https://github.com/kali/nginx-dynamic-etags>
-" Attempt at handling ETag / If-None-Match on proxied content. 
+" Attempt at handling ETag / If-None-Match on proxied content.
 syn keyword ngxDirectiveThirdParty dynamic_etags
 
 " Echo Module <https://www.nginx.com/resources/wiki/modules/echo/>
@@ -921,7 +921,7 @@ syn keyword ngxDirectiveDeprecated geoip_country_file
 syn keyword ngxDirectiveThirdParty geoip2
 
 " GridFS Module <https://github.com/mdirolf/nginx-gridfs>
-" Nginx module for serving files from MongoDB's GridFS 
+" Nginx module for serving files from MongoDB's GridFS
 syn keyword ngxDirectiveThirdParty gridfs
 
 " Headers More Module <https://github.com/openresty/headers-more-nginx-module>
@@ -943,7 +943,7 @@ syn keyword ngxDirectiveThirdParty healthcheck_buffer
 syn keyword ngxDirectiveThirdParty healthcheck_status
 
 " HTTP Accounting Module <https://github.com/Lax/ngx_http_accounting_module>
-" Add traffic stat function to nginx. Useful for http accounting based on nginx configuration logic 
+" Add traffic stat function to nginx. Useful for http accounting based on nginx configuration logic
 syn keyword ngxDirectiveThirdParty http_accounting
 syn keyword ngxDirectiveThirdParty http_accounting_log
 syn keyword ngxDirectiveThirdParty http_accounting_id
@@ -951,7 +951,7 @@ syn keyword ngxDirectiveThirdParty http_accounting_interval
 syn keyword ngxDirectiveThirdParty http_accounting_perturb
 
 " Nginx Digest Authentication module <https://github.com/atomx/nginx-http-auth-digest>
-" Digest Authentication for Nginx 
+" Digest Authentication for Nginx
 syn keyword ngxDirectiveThirdParty auth_digest
 syn keyword ngxDirectiveThirdParty auth_digest_user_file
 syn keyword ngxDirectiveThirdParty auth_digest_timeout
@@ -970,7 +970,7 @@ syn keyword ngxDirectiveThirdParty auth_pam_service_name
 " syn keyword ngxDirectiveThirdParty auth_request_set
 
 " HTTP Concatenation module for Nginx <https://github.com/alibaba/nginx-http-concat>
-" A Nginx module for concatenating files in a given context: CSS and JS files usually 
+" A Nginx module for concatenating files in a given context: CSS and JS files usually
 syn keyword ngxDirectiveThirdParty concat
 syn keyword ngxDirectiveThirdParty concat_types
 syn keyword ngxDirectiveThirdParty concat_unique
@@ -996,7 +996,7 @@ syn keyword ngxDirectiveThirdParty footer
 syn keyword ngxDirectiveThirdParty footer_types
 
 " HTTP Internal Redirect Module <https://github.com/flygoast/ngx_http_internal_redirect>
-" Make an internal redirect to the uri specified according to the condition specified. 
+" Make an internal redirect to the uri specified according to the condition specified.
 syn keyword ngxDirectiveThirdParty internal_redirect_if
 syn keyword ngxDirectiveThirdParty internal_redirect_if_no_postponed
 
@@ -1030,7 +1030,7 @@ syn keyword ngxDirectiveThirdParty redis_read_timeout
 syn keyword ngxDirectiveThirdParty redis_send_timeout
 
 " Iconv Module <https://github.com/calio/iconv-nginx-module>
-" A character conversion nginx module using libiconv 
+" A character conversion nginx module using libiconv
 syn keyword ngxDirectiveThirdParty set_iconv
 syn keyword ngxDirectiveThirdParty iconv_buffer_size
 syn keyword ngxDirectiveThirdParty iconv_filter
@@ -1063,7 +1063,7 @@ syn keyword ngxDirectiveThirdParty limit_upstream_log_level
 
 " Log If Module <https://github.com/cfsego/ngx_log_if>
 " Conditional accesslog for nginx
-syn keyword ngxDirectiveThirdParty access_log_bypass_if 
+syn keyword ngxDirectiveThirdParty access_log_bypass_if
 
 " Log Request Speed (DEPRECATED) <http://wiki.nginx.org/NginxHttpLogRequestSpeed>
 " Log the time it took to process each request.
@@ -1083,10 +1083,10 @@ syn keyword ngxDirectiveThirdParty lower
 syn keyword ngxDirectiveThirdParty upper
 
 " Lua Upstream Module <https://github.com/openresty/lua-upstream-nginx-module>
-" Nginx C module to expose Lua API to ngx_lua for Nginx upstreams 
+" Nginx C module to expose Lua API to ngx_lua for Nginx upstreams
 
 " Lua Module <https://github.com/openresty/lua-nginx-module>
-" Embed the Power of Lua into NGINX HTTP servers 
+" Embed the Power of Lua into NGINX HTTP servers
 syn keyword ngxDirectiveThirdParty lua_use_default_type
 syn keyword ngxDirectiveThirdParty lua_malloc_trim
 syn keyword ngxDirectiveThirdParty lua_code_cache
@@ -1153,7 +1153,7 @@ syn keyword ngxDirectiveThirdParty lua_max_pending_timers
 syn keyword ngxDirectiveThirdParty lua_max_running_timers
 
 " MD5 Filter Module <https://github.com/kainswor/nginx_md5_filter>
-" A content filter for nginx, which returns the md5 hash of the content otherwise returned. 
+" A content filter for nginx, which returns the md5 hash of the content otherwise returned.
 syn keyword ngxDirectiveThirdParty md5_filter
 
 " Memc Module <https://github.com/openresty/memc-nginx-module>
@@ -1222,54 +1222,54 @@ syn keyword ngxDirectiveThirdParty LibInjectionXss libinjection_xss
 
 " Nchan Module <https://nchan.slact.net/>
 " Fast, horizontally scalable, multiprocess pub/sub queuing server and proxy for HTTP, long-polling, Websockets and EventSource (SSE)
-syn keyword ngxDirectiveThirdParty nchan_channel_id 
-syn keyword ngxDirectiveThirdParty nchan_channel_id_split_delimiter 
-syn keyword ngxDirectiveThirdParty nchan_eventsource_event 
-syn keyword ngxDirectiveThirdParty nchan_longpoll_multipart_response 
-syn keyword ngxDirectiveThirdParty nchan_publisher 
-syn keyword ngxDirectiveThirdParty nchan_publisher_channel_id 
-syn keyword ngxDirectiveThirdParty nchan_publisher_upstream_request 
-syn keyword ngxDirectiveThirdParty nchan_pubsub 
-syn keyword ngxDirectiveThirdParty nchan_subscribe_request 
-syn keyword ngxDirectiveThirdParty nchan_subscriber 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_channel_id 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_compound_etag_message_id 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_first_message 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_http_raw_stream_separator 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_last_message_id 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_message_id_custom_etag_header 
-syn keyword ngxDirectiveThirdParty nchan_subscriber_timeout 
-syn keyword ngxDirectiveThirdParty nchan_unsubscribe_request 
-syn keyword ngxDirectiveThirdParty nchan_websocket_ping_interval 
-syn keyword ngxDirectiveThirdParty nchan_authorize_request 
-syn keyword ngxDirectiveThirdParty nchan_max_reserved_memory 
-syn keyword ngxDirectiveThirdParty nchan_message_buffer_length 
-syn keyword ngxDirectiveThirdParty nchan_message_timeout 
-syn keyword ngxDirectiveThirdParty nchan_redis_idle_channel_cache_timeout 
-syn keyword ngxDirectiveThirdParty nchan_redis_namespace 
-syn keyword ngxDirectiveThirdParty nchan_redis_pass 
-syn keyword ngxDirectiveThirdParty nchan_redis_ping_interval 
-syn keyword ngxDirectiveThirdParty nchan_redis_server 
-syn keyword ngxDirectiveThirdParty nchan_redis_storage_mode 
-syn keyword ngxDirectiveThirdParty nchan_redis_url 
-syn keyword ngxDirectiveThirdParty nchan_store_messages 
-syn keyword ngxDirectiveThirdParty nchan_use_redis 
-syn keyword ngxDirectiveThirdParty nchan_access_control_allow_origin 
-syn keyword ngxDirectiveThirdParty nchan_channel_group 
-syn keyword ngxDirectiveThirdParty nchan_channel_group_accounting 
-syn keyword ngxDirectiveThirdParty nchan_group_location 
-syn keyword ngxDirectiveThirdParty nchan_group_max_channels 
-syn keyword ngxDirectiveThirdParty nchan_group_max_messages 
-syn keyword ngxDirectiveThirdParty nchan_group_max_messages_disk 
-syn keyword ngxDirectiveThirdParty nchan_group_max_messages_memory 
-syn keyword ngxDirectiveThirdParty nchan_group_max_subscribers 
-syn keyword ngxDirectiveThirdParty nchan_subscribe_existing_channels_only 
-syn keyword ngxDirectiveThirdParty nchan_channel_event_string 
-syn keyword ngxDirectiveThirdParty nchan_channel_events_channel_id 
-syn keyword ngxDirectiveThirdParty nchan_stub_status 
-syn keyword ngxDirectiveThirdParty nchan_max_channel_id_length 
-syn keyword ngxDirectiveThirdParty nchan_max_channel_subscribers 
-syn keyword ngxDirectiveThirdParty nchan_channel_timeout 
+syn keyword ngxDirectiveThirdParty nchan_channel_id
+syn keyword ngxDirectiveThirdParty nchan_channel_id_split_delimiter
+syn keyword ngxDirectiveThirdParty nchan_eventsource_event
+syn keyword ngxDirectiveThirdParty nchan_longpoll_multipart_response
+syn keyword ngxDirectiveThirdParty nchan_publisher
+syn keyword ngxDirectiveThirdParty nchan_publisher_channel_id
+syn keyword ngxDirectiveThirdParty nchan_publisher_upstream_request
+syn keyword ngxDirectiveThirdParty nchan_pubsub
+syn keyword ngxDirectiveThirdParty nchan_subscribe_request
+syn keyword ngxDirectiveThirdParty nchan_subscriber
+syn keyword ngxDirectiveThirdParty nchan_subscriber_channel_id
+syn keyword ngxDirectiveThirdParty nchan_subscriber_compound_etag_message_id
+syn keyword ngxDirectiveThirdParty nchan_subscriber_first_message
+syn keyword ngxDirectiveThirdParty nchan_subscriber_http_raw_stream_separator
+syn keyword ngxDirectiveThirdParty nchan_subscriber_last_message_id
+syn keyword ngxDirectiveThirdParty nchan_subscriber_message_id_custom_etag_header
+syn keyword ngxDirectiveThirdParty nchan_subscriber_timeout
+syn keyword ngxDirectiveThirdParty nchan_unsubscribe_request
+syn keyword ngxDirectiveThirdParty nchan_websocket_ping_interval
+syn keyword ngxDirectiveThirdParty nchan_authorize_request
+syn keyword ngxDirectiveThirdParty nchan_max_reserved_memory
+syn keyword ngxDirectiveThirdParty nchan_message_buffer_length
+syn keyword ngxDirectiveThirdParty nchan_message_timeout
+syn keyword ngxDirectiveThirdParty nchan_redis_idle_channel_cache_timeout
+syn keyword ngxDirectiveThirdParty nchan_redis_namespace
+syn keyword ngxDirectiveThirdParty nchan_redis_pass
+syn keyword ngxDirectiveThirdParty nchan_redis_ping_interval
+syn keyword ngxDirectiveThirdParty nchan_redis_server
+syn keyword ngxDirectiveThirdParty nchan_redis_storage_mode
+syn keyword ngxDirectiveThirdParty nchan_redis_url
+syn keyword ngxDirectiveThirdParty nchan_store_messages
+syn keyword ngxDirectiveThirdParty nchan_use_redis
+syn keyword ngxDirectiveThirdParty nchan_access_control_allow_origin
+syn keyword ngxDirectiveThirdParty nchan_channel_group
+syn keyword ngxDirectiveThirdParty nchan_channel_group_accounting
+syn keyword ngxDirectiveThirdParty nchan_group_location
+syn keyword ngxDirectiveThirdParty nchan_group_max_channels
+syn keyword ngxDirectiveThirdParty nchan_group_max_messages
+syn keyword ngxDirectiveThirdParty nchan_group_max_messages_disk
+syn keyword ngxDirectiveThirdParty nchan_group_max_messages_memory
+syn keyword ngxDirectiveThirdParty nchan_group_max_subscribers
+syn keyword ngxDirectiveThirdParty nchan_subscribe_existing_channels_only
+syn keyword ngxDirectiveThirdParty nchan_channel_event_string
+syn keyword ngxDirectiveThirdParty nchan_channel_events_channel_id
+syn keyword ngxDirectiveThirdParty nchan_stub_status
+syn keyword ngxDirectiveThirdParty nchan_max_channel_id_length
+syn keyword ngxDirectiveThirdParty nchan_max_channel_subscribers
+syn keyword ngxDirectiveThirdParty nchan_channel_timeout
 syn keyword ngxDirectiveThirdParty nchan_storage_engine
 " Nginx Notice Module <https://github.com/kr/nginx-notice>
 " Serve static file to POST requests.
@@ -1277,7 +1277,7 @@ syn keyword ngxDirectiveThirdParty notice
 syn keyword ngxDirectiveThirdParty notice_type
 
 " OCSP Proxy Module <https://github.com/kyprizel/nginx_ocsp_proxy-module>
-" Nginx OCSP processing module designed for response caching 
+" Nginx OCSP processing module designed for response caching
 syn keyword ngxDirectiveThirdParty ocsp_proxy
 syn keyword ngxDirectiveThirdParty ocsp_cache_timeout
 
@@ -1290,7 +1290,7 @@ syn keyword ngxDirectiveThirdParty eval_override_content_type
 syn keyword ngxDirectiveThirdParty eval_subrequest_in_memory
 
 " OpenSSL Version Module <https://github.com/apcera/nginx-openssl-version>
-" Nginx OpenSSL version check at startup 
+" Nginx OpenSSL version check at startup
 syn keyword ngxDirectiveThirdParty openssl_version_minimum
 syn keyword ngxDirectiveThirdParty openssl_builddate_minimum
 
@@ -1308,7 +1308,7 @@ syn keyword ngxDirectiveThirdParty pagespeed
 syn keyword ngxDirectiveThirdParty hash_key
 
 " PHP Session Module <https://github.com/replay/ngx_http_php_session>
-" Nginx module to parse php sessions 
+" Nginx module to parse php sessions
 syn keyword ngxDirectiveThirdParty php_session_parse
 syn keyword ngxDirectiveThirdParty php_session_strip_formatting
 
@@ -1478,7 +1478,7 @@ syn keyword ngxDirectiveThirdParty push_stream_allow_connections_to_events_chann
 " Make a reverse DNS (rDNS) lookup for incoming connection and provides simple access control of incoming hostname by allow/deny rules
 syn keyword ngxDirectiveThirdParty rdns
 syn keyword ngxDirectiveThirdParty rdns_allow
-syn keyword ngxDirectiveThirdParty rdns_deny 
+syn keyword ngxDirectiveThirdParty rdns_deny
 
 " RDS CSV Module <https://github.com/openresty/rds-csv-nginx-module>
 " Nginx output filter module to convert Resty-DBD-Streams (RDS) to Comma-Separated Values (CSV)
@@ -1504,13 +1504,13 @@ syn keyword ngxDirectiveThirdParty rds_json_content_type
 
 " Redis Module <https://www.nginx.com/resources/wiki/modules/redis/>
 " Use this module to perform simple caching
-syn keyword ngxDirectiveThirdParty redis_pass 
-syn keyword ngxDirectiveThirdParty redis_bind 
-syn keyword ngxDirectiveThirdParty redis_connect_timeout 
-syn keyword ngxDirectiveThirdParty redis_read_timeout 
-syn keyword ngxDirectiveThirdParty redis_send_timeout 
-syn keyword ngxDirectiveThirdParty redis_buffer_size 
-syn keyword ngxDirectiveThirdParty redis_next_upstream 
+syn keyword ngxDirectiveThirdParty redis_pass
+syn keyword ngxDirectiveThirdParty redis_bind
+syn keyword ngxDirectiveThirdParty redis_connect_timeout
+syn keyword ngxDirectiveThirdParty redis_read_timeout
+syn keyword ngxDirectiveThirdParty redis_send_timeout
+syn keyword ngxDirectiveThirdParty redis_buffer_size
+syn keyword ngxDirectiveThirdParty redis_next_upstream
 syn keyword ngxDirectiveThirdParty redis_gzip_flag
 
 " Redis 2 Module <https://github.com/openresty/redis2-nginx-module>
@@ -1527,7 +1527,7 @@ syn keyword ngxDirectiveThirdParty redis2_buffer_size
 syn keyword ngxDirectiveThirdParty redis2_next_upstream
 
 " Replace Filter Module <https://github.com/openresty/replace-filter-nginx-module>
-" Streaming regular expression replacement in response bodies 
+" Streaming regular expression replacement in response bodies
 syn keyword ngxDirectiveThirdParty replace_filter
 syn keyword ngxDirectiveThirdParty replace_filter_types
 syn keyword ngxDirectiveThirdParty replace_filter_max_buffered_size
@@ -1647,7 +1647,7 @@ syn keyword ngxDirectiveThirdParty rtmp_socket_dir
 syn keyword ngxDirectiveThirdParty rtmp_control
 
 " RTMPT Module <https://github.com/kwojtek/nginx-rtmpt-proxy-module>
-" Module for nginx to proxy rtmp using http protocol 
+" Module for nginx to proxy rtmp using http protocol
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_target
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_rtmp_timeout
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_http_timeout
@@ -1688,7 +1688,7 @@ syn keyword ngxDirectiveThirdParty set_cconv_to_trad
 syn keyword ngxDirectiveThirdParty set_pinyin_to_normal
 
 " Set Hash Module <https://github.com/simpl/ngx_http_set_hash>
-" Nginx module that allows the setting of variables to the value of a variety of hashes  
+" Nginx module that allows the setting of variables to the value of a variety of hashes
 syn keyword ngxDirectiveThirdParty set_md5
 syn keyword ngxDirectiveThirdParty set_md5_upper
 syn keyword ngxDirectiveThirdParty set_murmur2
@@ -1741,7 +1741,7 @@ syn keyword ngxDirectiveThirdParty set_formatted_local_time
 syn keyword ngxDirectiveThirdParty sflow
 
 " Shibboleth Module <https://github.com/nginx-shib/nginx-http-shibboleth>
-" Shibboleth auth request module for nginx 
+" Shibboleth auth request module for nginx
 syn keyword ngxDirectiveThirdParty shib_request
 syn keyword ngxDirectiveThirdParty shib_request_set
 syn keyword ngxDirectiveThirdParty shib_request_use_headers
@@ -1836,7 +1836,7 @@ syn keyword ngxDirectiveThirdParty sssd_info_attribute_separator
 
 " Static Etags Module <https://github.com/mikewest/nginx-static-etags>
 " Generate etags for static content
-syn keyword ngxDirectiveThirdParty FileETag 
+syn keyword ngxDirectiveThirdParty FileETag
 
 " Statsd Module <https://github.com/zebrafishlabs/nginx-statsd>
 " An nginx module for sending statistics to statsd
@@ -1847,10 +1847,10 @@ syn keyword ngxDirectiveThirdParty statsd_timing
 
 " Sticky Module <https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng>
 " Add a sticky cookie to be always forwarded to the same upstream server
-" syn keyword ngxDirectiveThirdParty sticky 
+" syn keyword ngxDirectiveThirdParty sticky
 
 " Stream Echo Module <https://github.com/openresty/stream-echo-nginx-module>
-" TCP/stream echo module for NGINX (a port of ngx_http_echo_module) 
+" TCP/stream echo module for NGINX (a port of ngx_http_echo_module)
 syn keyword ngxDirectiveThirdParty echo
 syn keyword ngxDirectiveThirdParty echo_duplicate
 syn keyword ngxDirectiveThirdParty echo_flush_wait
@@ -1876,7 +1876,7 @@ syn keyword ngxDirectiveThirdParty lua_lingering_time
 syn keyword ngxDirectiveThirdParty lua_lingering_timeout
 
 " Stream Upsync Module <https://github.com/xiaokai-wang/nginx-stream-upsync-module>
-" Sync upstreams from consul or others, dynamiclly modify backend-servers attribute(weight, max_fails,...), needn't reload nginx. 
+" Sync upstreams from consul or others, dynamiclly modify backend-servers attribute(weight, max_fails,...), needn't reload nginx.
 syn keyword ngxDirectiveThirdParty upsync
 syn keyword ngxDirectiveThirdParty upsync_dump_path
 syn keyword ngxDirectiveThirdParty upsync_lb
@@ -1909,7 +1909,7 @@ syn keyword ngxDirectiveThirdParty supervisord_start
 syn keyword ngxDirectiveThirdParty supervisord_stop
 
 " Tarantool Upstream Module <https://github.com/tarantool/nginx_upstream_module>
-" Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)  
+" Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)
 syn keyword ngxDirectiveThirdParty tnt_pass
 syn keyword ngxDirectiveThirdParty tnt_http_methods
 syn keyword ngxDirectiveThirdParty tnt_http_rest_methods
@@ -1927,7 +1927,7 @@ syn keyword ngxDirectiveThirdParty tnt_next_upstream_tries
 syn keyword ngxDirectiveThirdParty tnt_next_upstream_timeout
 
 " TCP Proxy Module <http://yaoweibin.github.io/nginx_tcp_proxy_module/>
-" Add the feature of tcp proxy with nginx, with health check and status monitor 
+" Add the feature of tcp proxy with nginx, with health check and status monitor
 syn keyword ngxDirectiveBlock tcp
 " syn keyword ngxDirectiveThirdParty server
 " syn keyword ngxDirectiveThirdParty listen
@@ -1967,7 +1967,7 @@ syn keyword ngxDirectiveThirdParty testcookie_arg
 syn keyword ngxDirectiveThirdParty testcookie_max_attempts
 syn keyword ngxDirectiveThirdParty testcookie_p3p
 syn keyword ngxDirectiveThirdParty testcookie_fallback
-syn keyword ngxDirectiveThirdParty testcookie_whitelist 
+syn keyword ngxDirectiveThirdParty testcookie_whitelist
 syn keyword ngxDirectiveThirdParty testcookie_pass
 syn keyword ngxDirectiveThirdParty testcookie_redirect_via_refresh
 syn keyword ngxDirectiveThirdParty testcookie_refresh_template
@@ -1983,7 +1983,7 @@ syn keyword ngxDirectiveThirdParty testcookie_httponly_flag
 syn keyword ngxDirectiveThirdParty testcookie_secure_flag
 
 " Types Filter Module <https://github.com/flygoast/ngx_http_types_filter>
-" Change the `Content-Type` output header depending on an extension variable according to a condition specified in the 'if' clause. 
+" Change the `Content-Type` output header depending on an extension variable according to a condition specified in the 'if' clause.
 syn keyword ngxDirectiveThirdParty types_filter
 syn keyword ngxDirectiveThirdParty types_filter_use_default
 
@@ -2036,7 +2036,7 @@ syn keyword ngxDirectiveDeprecated hash_again
 
 " Upstream Domain Resolve Module <https://www.nginx.com/resources/wiki/modules/domain_resolve/>
 " A load-balancer that resolves an upstream domain name asynchronously.
-syn keyword ngxDirectiveThirdParty jdomain 
+syn keyword ngxDirectiveThirdParty jdomain
 
 " Upsync Module <https://github.com/weibocom/nginx-upsync-module>
 " Sync upstreams from consul or others, dynamiclly modify backend-servers attribute(weight, max_fails,...), needn't reload nginx
@@ -2056,7 +2056,7 @@ syn keyword ngxDirectiveThirdParty url_encoding_convert_to
 syn keyword ngxDirectiveThirdParty user_agent
 
 " Upstrema Ketama Chash Module <https://github.com/flygoast/ngx_http_upstream_ketama_chash>
-" Nginx load-balancer module implementing ketama consistent hashing. 
+" Nginx load-balancer module implementing ketama consistent hashing.
 syn keyword ngxDirectiveThirdParty ketama_chash
 
 " Video Thumbextractor Module <https://github.com/wandenberg/nginx-video-thumbextractor-module>
@@ -2081,8 +2081,8 @@ syn keyword ngxDirectiveThirdParty video_thumbextractor_processes_per_worker
 
 " Eval Module <http://www.grid.net.ru/nginx/eval.en.html>
 " Module for nginx web server evaluates response of proxy or memcached module into variables.
-syn keyword ngxDirectiveThirdParty eval 
-syn keyword ngxDirectiveThirdParty eval_escalate 
+syn keyword ngxDirectiveThirdParty eval
+syn keyword ngxDirectiveThirdParty eval_escalate
 syn keyword ngxDirectiveThirdParty eval_override_content_type
 
 " VTS Module <https://github.com/vozlt/nginx-module-vts>

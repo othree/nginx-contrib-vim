@@ -1,5 +1,5 @@
 " HTTP Concatenation module for Nginx <https://github.com/alibaba/nginx-http-concat>
-" A Nginx module for concatenating files in a given context: CSS and JS files usually 
+" A Nginx module for concatenating files in a given context: CSS and JS files usually
 syn keyword ngxDirectiveThirdParty concat
 syn keyword ngxDirectiveThirdParty concat_types
 syn keyword ngxDirectiveThirdParty concat_unique

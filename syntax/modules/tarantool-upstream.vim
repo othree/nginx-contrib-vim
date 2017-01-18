@@ -1,5 +1,5 @@
 " Tarantool Upstream Module <https://github.com/tarantool/nginx_upstream_module>
-" Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)  
+" Tarantool NginX upstream module (REST, JSON API, websockets, load balancing)
 syn keyword ngxDirectiveThirdParty tnt_pass
 syn keyword ngxDirectiveThirdParty tnt_http_methods
 syn keyword ngxDirectiveThirdParty tnt_http_rest_methods

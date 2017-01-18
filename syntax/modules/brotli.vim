@@ -1,5 +1,5 @@
 " Brotli Module <https://github.com/google/ngx_brotli>
-" Nginx module for Brotli compression 
+" Nginx module for Brotli compression
 syn keyword ngxDirectiveThirdParty brotli_static
 syn keyword ngxDirectiveThirdParty brotli
 syn keyword ngxDirectiveThirdParty brotli_types

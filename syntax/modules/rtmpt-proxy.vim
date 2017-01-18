@@ -1,5 +1,5 @@
 " RTMPT Module <https://github.com/kwojtek/nginx-rtmpt-proxy-module>
-" Module for nginx to proxy rtmp using http protocol 
+" Module for nginx to proxy rtmp using http protocol
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_target
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_rtmp_timeout
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_http_timeout
