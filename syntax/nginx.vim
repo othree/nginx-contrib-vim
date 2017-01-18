@@ -758,7 +758,7 @@ syn keyword ngxDirectiveThirdParty circle_gif_max_radius
 syn keyword ngxDirectiveThirdParty circle_gif_min_radius
 syn keyword ngxDirectiveThirdParty circle_gif_step_radius
 
-" Nginx-Clojure Module http://nginx-clojure.github.io/index.html<>
+" Nginx-Clojure Module <http://nginx-clojure.github.io/index.html>
 " Parses the Accept-Language header and gives the most suitable locale from a list of supported locales.
 syn keyword ngxDirectiveThirdParty jvm_path
 syn keyword ngxDirectiveThirdParty jvm_var
@@ -1018,7 +1018,7 @@ syn keyword ngxDirectiveDeprecated push_queue_messages
 syn keyword ngxDirectiveDeprecated push_sender
 
 " HTTP Redis Module <https://www.nginx.com/resources/wiki/modules/redis/>
-" Redis <http://code.google.com/p/redis/> support.>
+" Redis <http://code.google.com/p/redis/> support.
 syn keyword ngxDirectiveThirdParty redis_bind
 syn keyword ngxDirectiveThirdParty redis_buffer_size
 syn keyword ngxDirectiveThirdParty redis_connect_timeout
