@@ -1,8 +1,8 @@
 " RTMP Module <https://github.com/arut/nginx-rtmp-module>
 " NGINX-based Media Streaming Server
 syn keyword ngxDirectiveThirdParty rtmp
-syn keyword ngxDirectiveThirdParty server
-syn keyword ngxDirectiveThirdParty listen
+" syn keyword ngxDirectiveThirdParty server
+" syn keyword ngxDirectiveThirdParty listen
 syn keyword ngxDirectiveThirdParty application
 syn keyword ngxDirectiveThirdParty timeout
 syn keyword ngxDirectiveThirdParty ping
