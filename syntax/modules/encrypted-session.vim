@@ -6,4 +6,3 @@ syn keyword ngxDirectiveThirdParty encrypted_session_expires
 syn keyword ngxDirectiveThirdParty set_encrypt_session
 syn keyword ngxDirectiveThirdParty set_decrypt_session
 
-

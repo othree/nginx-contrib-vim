@@ -6,3 +6,4 @@ syn keyword ngxDirectiveThirdParty rtmpt_proxy_http_timeout
 syn keyword ngxDirectiveThirdParty rtmpt_proxy
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_stat
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_stylesheet
+

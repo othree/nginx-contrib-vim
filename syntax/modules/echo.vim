@@ -19,4 +19,3 @@ syn keyword ngxDirectiveThirdParty echo_status
 syn keyword ngxDirectiveThirdParty echo_before_body
 syn keyword ngxDirectiveThirdParty echo_after_body
 
-

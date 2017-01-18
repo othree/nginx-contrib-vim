@@ -49,3 +49,4 @@ syn keyword ngxDirectiveThirdParty nchan_max_channel_id_length
 syn keyword ngxDirectiveThirdParty nchan_max_channel_subscribers
 syn keyword ngxDirectiveThirdParty nchan_channel_timeout
 syn keyword ngxDirectiveThirdParty nchan_storage_engine
+
