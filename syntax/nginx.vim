@@ -842,7 +842,6 @@ syn keyword ngxDirectiveThirdParty echo_status
 syn keyword ngxDirectiveThirdParty echo_before_body
 syn keyword ngxDirectiveThirdParty echo_after_body
 
-
 " Encrypted Session Module <https://github.com/openresty/encrypted-session-nginx-module>
 " Encrypt and decrypt nginx variable values
 syn keyword ngxDirectiveThirdParty encrypted_session_key
@@ -850,7 +849,6 @@ syn keyword ngxDirectiveThirdParty encrypted_session_iv
 syn keyword ngxDirectiveThirdParty encrypted_session_expires
 syn keyword ngxDirectiveThirdParty set_encrypt_session
 syn keyword ngxDirectiveThirdParty set_decrypt_session
-
 
 " Enhanced Memcached Module <https://github.com/bpaquet/ngx_http_enhanced_memcached_module>
 " This module is based on the standard Nginx Memcached module, with some additonal features
@@ -1271,6 +1269,7 @@ syn keyword ngxDirectiveThirdParty nchan_max_channel_id_length
 syn keyword ngxDirectiveThirdParty nchan_max_channel_subscribers
 syn keyword ngxDirectiveThirdParty nchan_channel_timeout
 syn keyword ngxDirectiveThirdParty nchan_storage_engine
+
 " Nginx Notice Module <https://github.com/kr/nginx-notice>
 " Serve static file to POST requests.
 syn keyword ngxDirectiveThirdParty notice
@@ -1303,7 +1302,7 @@ syn keyword ngxDirectiveThirdParty omdeny
 " Parses the Accept-Language header and gives the most suitable locale from a list of supported locales.
 syn keyword ngxDirectiveThirdParty pagespeed
 
-" PHP Memcache Standard Balancer Module <>
+" PHP Memcache Standard Balancer Module <https://github.com/replay/ngx_http_php_memcache_standard_balancer>
 " Loadbalancer that is compatible to the standard loadbalancer in the php-memcache module
 syn keyword ngxDirectiveThirdParty hash_key
 
@@ -1654,6 +1653,7 @@ syn keyword ngxDirectiveThirdParty rtmpt_proxy_http_timeout
 syn keyword ngxDirectiveThirdParty rtmpt_proxy
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_stat
 syn keyword ngxDirectiveThirdParty rtmpt_proxy_stylesheet
+
 " Syntactically Awesome Module <https://github.com/mneudert/sass-nginx-module>
 " Providing on-the-fly compiling of Sass files as an NGINX module.
 syn keyword ngxDirectiveThirdParty sass_compile
@@ -2111,7 +2111,6 @@ syn keyword ngxDirectiveThirdParty xss_input_types
 
 " ZIP Module <https://www.nginx.com/resources/wiki/modules/zip/>
 " ZIP archiver for nginx
-
 
 
 " highlight
