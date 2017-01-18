@@ -741,12 +741,8 @@ syn keyword ngxDirectiveThirdParty brotli_min_length
 " Adds ability to purge content from FastCGI, proxy, SCGI and uWSGI caches.
 syn keyword ngxDirectiveThirdParty fastcgi_cache_purge 
 syn keyword ngxDirectiveThirdParty proxy_cache_purge 
-syn keyword ngxDirectiveThirdParty scgi_cache_purge 
-syn keyword ngxDirectiveThirdParty uwsgi_cache_purge 
-syn keyword ngxDirectiveThirdParty fastcgi_cache_purge 
-syn keyword ngxDirectiveThirdParty proxy_cache_purge 
-syn keyword ngxDirectiveThirdParty scgi_cache_purge 
-syn keyword ngxDirectiveThirdParty uwsgi_cache_purge
+" syn keyword ngxDirectiveThirdParty scgi_cache_purge 
+" syn keyword ngxDirectiveThirdParty uwsgi_cache_purge 
 
 " Chunkin Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpChunkinModule>
 " HTTP 1.1 chunked-encoding request body support for Nginx.
@@ -970,8 +966,8 @@ syn keyword ngxDirectiveThirdParty auth_pam_service_name
 
 " HTTP Auth Request Module <http://nginx.org/en/docs/http/ngx_http_auth_request_module.html>
 " Implements client authorization based on the result of a subrequest
-syn keyword ngxDirectiveThirdParty auth_request
-syn keyword ngxDirectiveThirdParty auth_request_set
+" syn keyword ngxDirectiveThirdParty auth_request
+" syn keyword ngxDirectiveThirdParty auth_request_set
 
 " HTTP Concatenation module for Nginx <https://github.com/alibaba/nginx-http-concat>
 " A Nginx module for concatenating files in a given context: CSS and JS files usually 
@@ -1210,7 +1206,7 @@ syn keyword ngxDirectiveThirdParty mongo_next_upstream
 
 " MP4 Streaming Lite Module <https://www.nginx.com/resources/wiki/modules/mp4_streaming/>
 " Will seek to a certain time within H.264/MP4 files when provided with a 'start' parameter in the URL.
-syn keyword ngxDirectiveThirdParty mp4
+" syn keyword ngxDirectiveThirdParty mp4
 
 " NAXSI Module <https://github.com/nbs-system/naxsi>
 " NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX
@@ -1552,7 +1548,7 @@ syn keyword ngxDirectiveThirdParty rtmp
 " syn keyword ngxDirectiveThirdParty server
 " syn keyword ngxDirectiveThirdParty listen
 syn keyword ngxDirectiveThirdParty application
-syn keyword ngxDirectiveThirdParty timeout
+" syn keyword ngxDirectiveThirdParty timeout
 syn keyword ngxDirectiveThirdParty ping
 syn keyword ngxDirectiveThirdParty ping_timeout
 syn keyword ngxDirectiveThirdParty max_streams
@@ -1562,8 +1558,8 @@ syn keyword ngxDirectiveThirdParty max_queue
 syn keyword ngxDirectiveThirdParty max_message
 syn keyword ngxDirectiveThirdParty out_queue
 syn keyword ngxDirectiveThirdParty out_cork
-syn keyword ngxDirectiveThirdParty allow
-syn keyword ngxDirectiveThirdParty deny
+" syn keyword ngxDirectiveThirdParty allow
+" syn keyword ngxDirectiveThirdParty deny
 syn keyword ngxDirectiveThirdParty exec_push
 syn keyword ngxDirectiveThirdParty exec_pull
 syn keyword ngxDirectiveThirdParty exec
@@ -1640,8 +1636,8 @@ syn keyword ngxDirectiveThirdParty dash_fragment
 syn keyword ngxDirectiveThirdParty dash_playlist_length
 syn keyword ngxDirectiveThirdParty dash_nested
 syn keyword ngxDirectiveThirdParty dash_cleanup
-syn keyword ngxDirectiveThirdParty access_log
-syn keyword ngxDirectiveThirdParty log_format
+" syn keyword ngxDirectiveThirdParty access_log
+" syn keyword ngxDirectiveThirdParty log_format
 syn keyword ngxDirectiveThirdParty max_connections
 syn keyword ngxDirectiveThirdParty rtmp_stat
 syn keyword ngxDirectiveThirdParty rtmp_stat_stylesheet
@@ -1752,7 +1748,7 @@ syn keyword ngxDirectiveThirdParty shib_request_use_headers
 
 " Slice Module <https://github.com/alibaba/nginx-http-slice>
 " Nginx module for serving a file in slices (reverse byte-range)
-syn keyword ngxDirectiveThirdParty slice
+" syn keyword ngxDirectiveThirdParty slice
 syn keyword ngxDirectiveThirdParty slice_arg_begin
 syn keyword ngxDirectiveThirdParty slice_arg_end
 syn keyword ngxDirectiveThirdParty slice_header
@@ -1851,7 +1847,7 @@ syn keyword ngxDirectiveThirdParty statsd_timing
 
 " Sticky Module <https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng>
 " Add a sticky cookie to be always forwarded to the same upstream server
-syn keyword ngxDirectiveThirdParty sticky 
+" syn keyword ngxDirectiveThirdParty sticky 
 
 " Stream Echo Module <https://github.com/openresty/stream-echo-nginx-module>
 " TCP/stream echo module for NGINX (a port of ngx_http_echo_module) 
@@ -1932,17 +1928,17 @@ syn keyword ngxDirectiveThirdParty tnt_next_upstream_timeout
 
 " TCP Proxy Module <http://yaoweibin.github.io/nginx_tcp_proxy_module/>
 " Add the feature of tcp proxy with nginx, with health check and status monitor 
-syn keyword ngxDirectiveThirdParty tcp
+syn keyword ngxDirectiveBlock tcp
 " syn keyword ngxDirectiveThirdParty server
 " syn keyword ngxDirectiveThirdParty listen
-syn keyword ngxDirectiveThirdParty allow
-syn keyword ngxDirectiveThirdParty deny
-syn keyword ngxDirectiveThirdParty so_keepalive
-syn keyword ngxDirectiveThirdParty tcp_nodelay
-syn keyword ngxDirectiveThirdParty timeout
+" syn keyword ngxDirectiveThirdParty allow
+" syn keyword ngxDirectiveThirdParty deny
+" syn keyword ngxDirectiveThirdParty so_keepalive
+" syn keyword ngxDirectiveThirdParty tcp_nodelay
+" syn keyword ngxDirectiveThirdParty timeout
 " syn keyword ngxDirectiveThirdParty server_name
-syn keyword ngxDirectiveThirdParty resolver
-syn keyword ngxDirectiveThirdParty resolver_timeout
+" syn keyword ngxDirectiveThirdParty resolver
+" syn keyword ngxDirectiveThirdParty resolver_timeout
 " syn keyword ngxDirectiveThirdParty upstream
 syn keyword ngxDirectiveThirdParty check
 syn keyword ngxDirectiveThirdParty check_http_send
@@ -1951,11 +1947,11 @@ syn keyword ngxDirectiveThirdParty check_smtp_send
 syn keyword ngxDirectiveThirdParty check_smtp_expect_alive
 syn keyword ngxDirectiveThirdParty check_shm_size
 syn keyword ngxDirectiveThirdParty check_status
-syn keyword ngxDirectiveThirdParty ip_hash
+" syn keyword ngxDirectiveThirdParty ip_hash
 " syn keyword ngxDirectiveThirdParty proxy_pass
-syn keyword ngxDirectiveThirdParty proxy_buffer
-syn keyword ngxDirectiveThirdParty proxy_connect_timeout
-syn keyword ngxDirectiveThirdParty proxy_read_timeout
+" syn keyword ngxDirectiveThirdParty proxy_buffer
+" syn keyword ngxDirectiveThirdParty proxy_connect_timeout
+" syn keyword ngxDirectiveThirdParty proxy_read_timeout
 syn keyword ngxDirectiveThirdParty proxy_write_timeout
 
 " Testcookie Module <https://github.com/kyprizel/testcookie-nginx-module>
@@ -2035,7 +2031,7 @@ syn keyword ngxDirectiveThirdParty upstream_fair_shm_size
 
 " Upstream Hash Module (DEPRECATED) <http://wiki.nginx.org/NginxHttpUpstreamRequestHashModule>
 " Provides simple upstream load distribution by hashing a configurable variable.
-syn keyword ngxDirectiveDeprecated hash
+" syn keyword ngxDirectiveDeprecated hash
 syn keyword ngxDirectiveDeprecated hash_again
 
 " Upstream Domain Resolve Module <https://www.nginx.com/resources/wiki/modules/domain_resolve/>

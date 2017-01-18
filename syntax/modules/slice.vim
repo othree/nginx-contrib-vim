@@ -1,6 +1,6 @@
 " Slice Module <https://github.com/alibaba/nginx-http-slice>
 " Nginx module for serving a file in slices (reverse byte-range)
-syn keyword ngxDirectiveThirdParty slice
+" syn keyword ngxDirectiveThirdParty slice
 syn keyword ngxDirectiveThirdParty slice_arg_begin
 syn keyword ngxDirectiveThirdParty slice_arg_end
 syn keyword ngxDirectiveThirdParty slice_header
