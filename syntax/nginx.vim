@@ -5,11 +5,17 @@ if exists("b:current_syntax")
   finish
 end
 
-" Patch 7.4.1142
-if has("win32")
-  syn iskeyword @,48-57,_,128-167,224-235,.,/,:
+if has("patch-7.4-1142")
+  " Patch 7.4.1142
+  if has("win32")
+    syn iskeyword @,48-57,_,128-167,224-235,.,/,:
+  else
+    syn iskeyword @,48-57,_,192-255,.,/,:
+  endif
 else
-  syn iskeyword @,48-57,_,192-255,.,/,:
+  setlocal iskeyword+=.
+  setlocal iskeyword+=/
+  setlocal iskeyword+=:
 endif
 
 setlocal commentstring=#\ %s
