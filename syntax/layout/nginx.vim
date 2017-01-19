@@ -18,8 +18,6 @@ else
   setlocal iskeyword+=:
 endif
 
-setlocal commentstring=#\ %s
-
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
