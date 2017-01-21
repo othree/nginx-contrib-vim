@@ -64,7 +64,10 @@ syn keyword ngxDirectiveControl return
 syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite
 syn keyword ngxDirectiveControl set
 
-syn keyword ngxRewriteFlag last break redirect permanent
+syn keyword ngxRewriteFlag last
+syn keyword ngxRewriteFlag break
+syn keyword ngxRewriteFlag redirect
+syn keyword ngxRewriteFlag permanent
 
 syn keyword ngxDirectiveError error_page
 syn keyword ngxDirectiveError post_action
