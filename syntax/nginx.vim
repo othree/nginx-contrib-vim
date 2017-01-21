@@ -6,7 +6,6 @@ if exists("b:current_syntax")
 end
 
 if has("patch-7.4-1142")
-  " Patch 7.4.1142
   if has("win32")
     syn iskeyword @,48-57,_,128-167,224-235,.,/,:
   else
@@ -65,7 +64,10 @@ syn keyword ngxDirectiveControl return
 syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite
 syn keyword ngxDirectiveControl set
 
-syn keyword ngxRewriteFlag last break redirect permanent
+syn keyword ngxRewriteFlag last
+syn keyword ngxRewriteFlag break
+syn keyword ngxRewriteFlag redirect
+syn keyword ngxRewriteFlag permanent
 
 syn keyword ngxDirectiveError error_page
 syn keyword ngxDirectiveError post_action
