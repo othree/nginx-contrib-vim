@@ -5,16 +5,13 @@ if exists("b:current_syntax")
   finish
 end
 
+" Patch 7.4.1142
 if has("patch-7.4-1142")
   if has("win32")
     syn iskeyword @,48-57,_,128-167,224-235,.,/,:
   else
     syn iskeyword @,48-57,_,192-255,.,/,:
   endif
-else
-  setlocal iskeyword+=.
-  setlocal iskeyword+=/
-  setlocal iskeyword+=:
 endif
 
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
@@ -50,7 +47,7 @@ syn keyword ngxDirectiveImportant include
 syn keyword ngxDirectiveImportant root
 syn keyword ngxDirectiveImportant server
 syn keyword ngxDirectiveImportant server_name
-syn keyword ngxDirectiveImportant listen
+syn region  ngxDirectiveImportantListen matchgroup=ngxDirectiveImportant start=/listen/ end=/$/ contains=ngxListenOptions oneline
 syn keyword ngxDirectiveImportant internal
 syn keyword ngxDirectiveImportant proxy_pass
 syn keyword ngxDirectiveImportant memcached_pass
@@ -58,6 +55,23 @@ syn keyword ngxDirectiveImportant fastcgi_pass
 syn keyword ngxDirectiveImportant scgi_pass
 syn keyword ngxDirectiveImportant uwsgi_pass
 syn keyword ngxDirectiveImportant try_files
+
+syn keyword ngxListenOptions ssl
+syn keyword ngxListenOptions http2
+syn keyword ngxListenOptions spdy
+syn keyword ngxListenOptions proxy_protocol
+syn keyword ngxListenOptions setfib
+syn keyword ngxListenOptions fastopen
+syn keyword ngxListenOptions backlog
+syn keyword ngxListenOptions rcvbuf
+syn keyword ngxListenOptions sndbuf
+syn keyword ngxListenOptions accept_filter
+syn keyword ngxListenOptions deferred
+syn keyword ngxListenOptions bind
+syn keyword ngxListenOptions ipv6only
+syn keyword ngxListenOptions reuseport
+syn keyword ngxListenOptions so_keepalive
+syn keyword ngxListenOptions keepidle
 
 syn keyword ngxDirectiveControl break
 syn keyword ngxDirectiveControl return
@@ -692,8 +706,8 @@ syn keyword ngxDirectiveDeprecated accesskey_signature
 " syn keyword ngxDirectiveThirdParty fastcgi_store_access
 " syn keyword ngxDirectiveThirdParty fastcgi_temp_file_write_size
 " syn keyword ngxDirectiveThirdParty fastcgi_temp_path
-syn keyword ngxDirectiveThirdParty fastcgi_upstream_fail_timeout
-syn keyword ngxDirectiveThirdParty fastcgi_upstream_max_fails
+syn keyword ngxDirectiveDeprecated fastcgi_upstream_fail_timeout
+syn keyword ngxDirectiveDeprecated fastcgi_upstream_max_fails
 
 " Akamai G2O Module <https://github.com/kaltura/nginx_mod_akamai_g2o>
 " Nginx Module for Authenticating Akamai G2O requests
