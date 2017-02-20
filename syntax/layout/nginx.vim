@@ -5,16 +5,13 @@ if exists("b:current_syntax")
   finish
 end
 
+" Patch 7.4.1142
 if has("patch-7.4-1142")
   if has("win32")
     syn iskeyword @,48-57,_,128-167,224-235,.,/,:
   else
     syn iskeyword @,48-57,_,192-255,.,/,:
   endif
-else
-  setlocal iskeyword+=.
-  setlocal iskeyword+=/
-  setlocal iskeyword+=:
 endif
 
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
