@@ -2152,5 +2152,9 @@ hi link ngxDirectiveDeprecated Error
 hi link ngxDirective Identifier
 hi link ngxDirectiveThirdParty Special
 
+hi link ngxSSLProtocol Keyword
+hi link ngxMailProtocol Keyword
+hi link ngxListenOptions Keyword
+
 let b:current_syntax = "nginx"
 
