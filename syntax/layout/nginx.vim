@@ -57,22 +57,23 @@ syn keyword ngxDirectiveImportant scgi_pass
 syn keyword ngxDirectiveImportant uwsgi_pass
 syn keyword ngxDirectiveImportant try_files
 
-syn keyword ngxListenOptions ssl
-syn keyword ngxListenOptions http2
-syn keyword ngxListenOptions spdy
-syn keyword ngxListenOptions proxy_protocol
-syn keyword ngxListenOptions setfib
-syn keyword ngxListenOptions fastopen
-syn keyword ngxListenOptions backlog
-syn keyword ngxListenOptions rcvbuf
-syn keyword ngxListenOptions sndbuf
-syn keyword ngxListenOptions accept_filter
-syn keyword ngxListenOptions deferred
-syn keyword ngxListenOptions bind
-syn keyword ngxListenOptions ipv6only
-syn keyword ngxListenOptions reuseport
-syn keyword ngxListenOptions so_keepalive
-syn keyword ngxListenOptions keepidle
+syn keyword ngxListenOptions default_server contained
+syn keyword ngxListenOptions ssl            contained
+syn keyword ngxListenOptions http2          contained
+syn keyword ngxListenOptions spdy           contained
+syn keyword ngxListenOptions proxy_protocol contained
+syn keyword ngxListenOptions setfib         contained
+syn keyword ngxListenOptions fastopen       contained
+syn keyword ngxListenOptions backlog        contained
+syn keyword ngxListenOptions rcvbuf         contained
+syn keyword ngxListenOptions sndbuf         contained
+syn keyword ngxListenOptions accept_filter  contained
+syn keyword ngxListenOptions deferred       contained
+syn keyword ngxListenOptions bind           contained
+syn keyword ngxListenOptions ipv6only       contained
+syn keyword ngxListenOptions reuseport      contained
+syn keyword ngxListenOptions so_keepalive   contained
+syn keyword ngxListenOptions keepidle       contained
 
 syn keyword ngxDirectiveControl break
 syn keyword ngxDirectiveControl return
