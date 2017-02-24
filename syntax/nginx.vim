@@ -17,8 +17,8 @@ endif
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
-syn match ngxRewriteURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxURI skipwhite
-syn match ngxURI /\S\+/ contained contains=ngxVariableString skipwhite
+syn match ngxRewriteURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxURI skipwhite skipempty
+syn match ngxURI /\S\+/ contained contains=ngxVariableString skipwhite skipempty
 syn match ngxLocationPath /[^ {]\+/ contained
 syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 
@@ -32,9 +32,9 @@ syn keyword ngxDirectiveBlock events
 syn keyword ngxDirectiveBlock server
 syn keyword ngxDirectiveBlock stream
 syn keyword ngxDirectiveBlock types
-syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath,ngxString skipwhite
+syn match   ngxLocationOperator /\(=\|\~\*\|\^\~\|\~\)/ contained nextgroup=ngxLocationPath,ngxString skipwhite skipempty
 syn match   ngxLocationNamedLoc /@\w\+/
-syn keyword ngxDirectiveBlock location nextgroup=ngxLocationNamedLoc,ngxLocationOperator,ngxLocationPath,ngxString skipwhite
+syn keyword ngxDirectiveBlock location nextgroup=ngxLocationNamedLoc,ngxLocationOperator,ngxLocationPath,ngxString skipwhite skipempty
 syn keyword ngxDirectiveBlock upstream
 syn keyword ngxDirectiveBlock charset_map
 syn keyword ngxDirectiveBlock limit_except
@@ -77,7 +77,7 @@ syn keyword ngxListenOptions keepidle       contained
 
 syn keyword ngxDirectiveControl break
 syn keyword ngxDirectiveControl return
-syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite
+syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite skipempty
 syn keyword ngxDirectiveControl set
 
 syn keyword ngxRewriteFlag last
@@ -348,7 +348,7 @@ syn keyword ngxDirective postpone_gzipping
 syn keyword ngxDirective postpone_output
 syn keyword ngxDirective preread_buffer_size
 syn keyword ngxDirective preread_timeout
-syn keyword ngxDirective protocol nextgroup=ngxMailProtocol skipwhite
+syn keyword ngxDirective protocol nextgroup=ngxMailProtocol skipwhite skipempty
 syn keyword ngxMailProtocol imap pop3 smtp contained
 syn keyword ngxDirective proxy
 syn keyword ngxDirective proxy_bind
@@ -411,7 +411,7 @@ syn keyword ngxDirective proxy_ssl_ciphers
 syn keyword ngxDirective proxy_ssl_crl
 syn keyword ngxDirective proxy_ssl_name
 syn keyword ngxDirective proxy_ssl_password_file
-syn keyword ngxDirective proxy_ssl_protocols nextgroup=ngxSSLProtocol skipwhite
+syn keyword ngxDirective proxy_ssl_protocols nextgroup=ngxSSLProtocol skipwhite skipempty
 syn keyword ngxDirective proxy_ssl_server_name
 syn keyword ngxDirective proxy_ssl_session_reuse
 syn keyword ngxDirective proxy_ssl_trusted_certificate
@@ -533,8 +533,8 @@ syn keyword ngxDirective ssl_handshake_timeout
 syn keyword ngxDirective ssl_password_file
 syn keyword ngxDirective ssl_prefer_server_ciphers
 syn keyword ngxDirective ssl_preread
-syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite
-syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 contained nextgroup=ngxSSLProtocol skipwhite
+syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite skipempty
+syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 contained nextgroup=ngxSSLProtocol skipwhite skipempty
 syn keyword ngxDirective ssl_session_cache
 syn keyword ngxDirective ssl_session_ticket_key
 syn keyword ngxDirective ssl_session_tickets
@@ -625,7 +625,7 @@ syn keyword ngxDirective uwsgi_ssl_ciphers
 syn keyword ngxDirective uwsgi_ssl_crl
 syn keyword ngxDirective uwsgi_ssl_name
 syn keyword ngxDirective uwsgi_ssl_password_file
-syn keyword ngxDirective uwsgi_ssl_protocols nextgroup=ngxSSLProtocol skipwhite
+syn keyword ngxDirective uwsgi_ssl_protocols nextgroup=ngxSSLProtocol skipwhite skipempty
 syn keyword ngxDirective uwsgi_ssl_server_name
 syn keyword ngxDirective uwsgi_ssl_session_reuse
 syn keyword ngxDirective uwsgi_ssl_trusted_certificate
