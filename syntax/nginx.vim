@@ -17,7 +17,7 @@ endif
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
-syn match ngxLocationPath /[^ {]\+/ contained
+syn match ngxLocationPath /\S\+/ contained
 syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 
 syn keyword ngxBoolean on
