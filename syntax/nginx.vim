@@ -17,8 +17,6 @@ endif
 syn match ngxVariable '\$\(\w\+\|{\w\+}\)'
 syn match ngxVariableString '\$\(\w\+\|{\w\+}\)' contained
 syn match ngxComment ' *#.*$'
-syn match ngxRewriteURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxURI skipwhite skipempty
-syn match ngxURI /\S\+/ contained contains=ngxVariableString skipwhite skipempty
 syn match ngxLocationPath /[^ {]\+/ contained
 syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString
 
@@ -80,10 +78,13 @@ syn keyword ngxDirectiveControl return
 syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite skipempty
 syn keyword ngxDirectiveControl set
 
-syn keyword ngxRewriteFlag last
-syn keyword ngxRewriteFlag break
-syn keyword ngxRewriteFlag redirect
-syn keyword ngxRewriteFlag permanent
+syn match ngxRewriteURI  /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewritedURI skipwhite skipempty
+syn match ngxRewritedURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewriteFlag skipwhite skipempty
+
+syn keyword ngxRewriteFlag last      contained
+syn keyword ngxRewriteFlag break     contained
+syn keyword ngxRewriteFlag redirect  contained
+syn keyword ngxRewriteFlag permanent contained
 
 syn keyword ngxDirectiveError error_page
 syn keyword ngxDirectiveError post_action
