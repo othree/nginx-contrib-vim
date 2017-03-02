@@ -8,9 +8,9 @@ end
 " Patch 7.4.1142
 if has("patch-7.4-1142")
   if has("win32")
-    syn iskeyword @,48-57,_,128-167,224-235,.,/,:,-
+    syn iskeyword @,48-57,_,128-167,224-235,.,/,:
   else
-    syn iskeyword @,48-57,_,192-255,.,/,:,-
+    syn iskeyword @,48-57,_,192-255,.,/,:
   endif
 endif
 
@@ -942,6 +942,7 @@ syn keyword ngxDirectiveThirdParty      geoip2 nextgroup=ngxThirdPartyGeoIP2Data
 syn match   ngxThirdPartyGeoIP2Database /\S\+/ contained nextgroup=ngxThirdPartyGeoIP2Block skipwhite skipempty
 syn region  ngxThirdPartyGeoIP2Block    start=/{/ end=/}/ contained contains=ngxThirdPartyGeoIP2Keyword,ngxVariable
 syn keyword ngxThirdPartyGeoIP2Keyword  de en es fr ja pt-BR ru zh-CN contained
+syn match   ngxThirdPartyGeoIP2Keyword  /pt-BR|zh-CN/ contained
 syn keyword ngxThirdPartyGeoIP2Keyword  default source contained
 " Common Keys
 syn keyword ngxThirdPartyGeoIP2Keyword  code confidence geoname_id names iso_code contained
