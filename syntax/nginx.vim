@@ -74,9 +74,12 @@ syn keyword ngxListenOptions so_keepalive   contained
 syn keyword ngxListenOptions keepidle       contained
 
 syn keyword ngxDirectiveControl break
-syn keyword ngxDirectiveControl return
+syn keyword ngxDirectiveControl return nextgroup=ngxStatusCode skipwhite skipempty
 syn keyword ngxDirectiveControl rewrite nextgroup=ngxRewriteURI skipwhite skipempty
 syn keyword ngxDirectiveControl set
+
+syn match ngxStatusCode  /\d\d\d/ contained
+syn match ngxStatusCodes /\d\d\d/ contained contains=ngxStatusCode nextgroup=ngxStatusCode skipwhite skipempty
 
 syn match ngxRewriteURI  /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewritedURI skipwhite skipempty
 syn match ngxRewritedURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewriteFlag skipwhite skipempty
@@ -86,8 +89,11 @@ syn keyword ngxRewriteFlag break     contained
 syn keyword ngxRewriteFlag redirect  contained
 syn keyword ngxRewriteFlag permanent contained
 
-syn keyword ngxDirectiveError error_page
+syn keyword ngxDirectiveError error_page nextgroup=ngxErrorStatusCode skipwhite skipempty
 syn keyword ngxDirectiveError post_action
+
+syn match ngxErrorStatusCode   /\d\d\d/ contained contains=ngxStatusCode nextgroup=ngxErrorResponseCode skipwhite skipempty
+syn match ngxErrorResponseCode /=\d\d\d/ contained contains=ngxStatusCode
 
 syn keyword ngxDirectiveDeprecated connections
 syn keyword ngxDirectiveDeprecated imap
@@ -283,13 +289,13 @@ syn keyword ngxDirective least_conn
 syn keyword ngxDirective least_time
 syn keyword ngxDirective limit_conn
 syn keyword ngxDirective limit_conn_log_level
-syn keyword ngxDirective limit_conn_status
+syn keyword ngxDirective limit_conn_status nextgroup=ngxStatusCode skipwhite skipempty
 syn keyword ngxDirective limit_conn_zone
 syn keyword ngxDirective limit_rate
 syn keyword ngxDirective limit_rate_after
 syn keyword ngxDirective limit_req
 syn keyword ngxDirective limit_req_log_level
-syn keyword ngxDirective limit_req_status
+syn keyword ngxDirective limit_req_status nextgroup=ngxStatusCode skipwhite skipempty
 syn keyword ngxDirective limit_req_zone
 syn keyword ngxDirective lingering_close
 syn keyword ngxDirective lingering_time
@@ -372,7 +378,7 @@ syn keyword ngxDirective proxy_cache_path
 syn keyword ngxDirective proxy_cache_purge
 syn keyword ngxDirective proxy_cache_revalidate
 syn keyword ngxDirective proxy_cache_use_stale
-syn keyword ngxDirective proxy_cache_valid
+syn keyword ngxDirective proxy_cache_valid nextgroup=ngxStatusCodes skipwhite skipempty
 syn keyword ngxDirective proxy_connect_timeout
 syn keyword ngxDirective proxy_cookie_domain
 syn keyword ngxDirective proxy_cookie_path
@@ -2186,6 +2192,7 @@ hi link ngxLocationPath String
 hi link ngxLocationNamedLoc Identifier
 
 hi link ngxBoolean Boolean
+hi link ngxStatusCode Number
 hi link ngxRewriteFlag Boolean
 hi link ngxDirectiveBlock Statement
 hi link ngxDirectiveImportant Type
