@@ -139,7 +139,10 @@ syn keyword ngxDirective autoindex
 syn keyword ngxDirective autoindex_exact_size
 syn keyword ngxDirective autoindex_format
 syn keyword ngxDirective autoindex_localtime
-syn keyword ngxDirective charset
+syn keyword ngxDirective charset nextgroup=ngxCharset skipwhite skipempty
+
+syn keyword ngxCharset   utf-8 UTF-8
+
 syn keyword ngxDirective charset_map
 syn keyword ngxDirective charset_types
 syn keyword ngxDirective chunked_transfer_encoding
@@ -2210,9 +2213,13 @@ hi link ngxDirectiveDeprecated Error
 hi link ngxDirective Identifier
 hi link ngxDirectiveThirdParty Special
 
+hi link ngxCharset keyword
 hi link ngxListenOptions Keyword
 hi link ngxMailProtocol Keyword
 hi link ngxSSLProtocol Keyword
+
+hi link ngxRewriteURI  Special
+hi link ngxRewritedURI StorageClass
 
 hi link ngxThirdPartyKeyword keyword
 
