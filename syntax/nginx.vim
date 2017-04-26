@@ -23,6 +23,7 @@ syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
 
+" Number and Measures http://nginx.org/en/docs/syntax.html
 syn match ngxNumber  '\<\d\+\>'
 syn match ngxMeasure '\<\d\+ms\>'
 syn match ngxMeasure '\<\d\+[smhdwMy]\>'
