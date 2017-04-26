@@ -4,8 +4,10 @@ It's a clone of https://github.com/nginx/nginx/tree/master/contrib/vim.
 
 Then it's easier to use via [Vundle](https://github.com/VundleVim/Vundle.vim):
 
-    Plugin 'moskytw/nginx-contrib-vim'
-    
+    Plugin 'othree/nginx-contrib-vim'
+
+With lots of modification on syntax.
+
 Have fun. :)
 
 References
