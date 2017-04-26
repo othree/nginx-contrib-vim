@@ -2200,18 +2200,19 @@ hi link ngxString String
 hi link ngxLocationPath String
 hi link ngxLocationNamedLoc PreProc
 
+hi link ngxDirective Identifier
+hi link ngxDirectiveBlock Statement
+hi link ngxDirectiveImportant Type
+hi link ngxDirectiveControl Keyword
+hi link ngxDirectiveError Constant
+hi link ngxDirectiveThirdParty Identifier
+hi link ngxDirectiveDeprecated Error
+
 hi link ngxBoolean Boolean
 hi link ngxNumber Number
 hi link ngxMeasure Number
 hi link ngxStatusCode Number
 hi link ngxRewriteFlag Boolean
-hi link ngxDirectiveBlock Statement
-hi link ngxDirectiveImportant Type
-hi link ngxDirectiveControl Keyword
-hi link ngxDirectiveError Constant
-hi link ngxDirectiveDeprecated Error
-hi link ngxDirective Identifier
-hi link ngxDirectiveThirdParty Special
 
 hi link ngxCharset keyword
 hi link ngxListenOptions Keyword
