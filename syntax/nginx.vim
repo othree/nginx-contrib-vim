@@ -8,9 +8,9 @@ end
 " Patch 7.4.1142
 if has("patch-7.4-1142")
   if has("win32")
-    syn iskeyword @,48-57,_,128-167,224-235,.,/,:
+    syn iskeyword @,48-57,_,128-167,224-235,.,/,:,-
   else
-    syn iskeyword @,48-57,_,192-255,.,/,:
+    syn iskeyword @,48-57,_,192-255,.,/,:,-
   endif
 endif
 
@@ -23,6 +23,10 @@ syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
 
+syn match ngxNumber  '\<\d\+\>'
+syn match ngxMeasure '\<\d\+ms\>'
+syn match ngxMeasure '\<\d\+[smhdwMy]\>'
+syn match ngxMeasure '\<\d\+[kKmMgG]\>'
 
 syn keyword ngxDirectiveBlock http
 syn keyword ngxDirectiveBlock mail
@@ -46,7 +50,7 @@ syn keyword ngxDirectiveImportant root
 syn keyword ngxDirectiveImportant server
 syn keyword ngxDirectiveImportant server_name
 syn keyword ngxDirectiveImportant listen contained
-syn region  ngxDirectiveImportantListen matchgroup=ngxDirectiveImportant start=+listen+ skip=+\\\\\|\\\;+ end=+;+he=e-1 contains=ngxListenOptions,ngxString
+syn region  ngxDirectiveImportantListen matchgroup=ngxDirectiveImportant start=+listen+ skip=+\\\\\|\\\;+ end=+;+he=e-1 contains=ngxListenOptions,ngxNumber,ngxString
 syn keyword ngxDirectiveImportant internal
 syn keyword ngxDirectiveImportant proxy_pass
 syn keyword ngxDirectiveImportant memcached_pass
@@ -2187,13 +2191,15 @@ syn keyword ngxDirectiveThirdParty xss_input_types
 " highlight
 
 hi link ngxComment Comment
-hi link ngxVariable Identifier
+hi link ngxVariable PreProc
 hi link ngxVariableString PreProc
 hi link ngxString String
 hi link ngxLocationPath String
-hi link ngxLocationNamedLoc Identifier
+hi link ngxLocationNamedLoc PreProc
 
 hi link ngxBoolean Boolean
+hi link ngxNumber Number
+hi link ngxMeasure Number
 hi link ngxStatusCode Number
 hi link ngxRewriteFlag Boolean
 hi link ngxDirectiveBlock Statement
