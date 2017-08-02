@@ -8,9 +8,9 @@ end
 " Patch 7.4.1142
 if has("patch-7.4-1142")
   if has("win32")
-    syn iskeyword @,48-57,_,128-167,224-235,.,/,:,-
+    syn iskeyword @,48-57,_,128-167,224-235,.,/,:
   else
-    syn iskeyword @,48-57,_,192-255,.,/,:,-
+    syn iskeyword @,48-57,_,192-255,.,/,:
   endif
 endif
 
@@ -23,11 +23,6 @@ syn region ngxString start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|
 syn keyword ngxBoolean on
 syn keyword ngxBoolean off
 
-" Number and Measures http://nginx.org/en/docs/syntax.html
-syn match ngxNumber  '\<\d\+\>'
-syn match ngxMeasure '\<\d\+ms\>'
-syn match ngxMeasure '\<\d\+[smhdwMy]\>'
-syn match ngxMeasure '\<\d\+[kKmMgG]\>'
 
 syn keyword ngxDirectiveBlock http
 syn keyword ngxDirectiveBlock mail
@@ -51,7 +46,7 @@ syn keyword ngxDirectiveImportant root
 syn keyword ngxDirectiveImportant server
 syn keyword ngxDirectiveImportant server_name
 syn keyword ngxDirectiveImportant listen contained
-syn region  ngxDirectiveImportantListen matchgroup=ngxDirectiveImportant start=+listen+ skip=+\\\\\|\\\;+ end=+;+he=e-1 contains=ngxListenOptions,ngxNumber,ngxString
+syn region  ngxDirectiveImportantListen matchgroup=ngxDirectiveImportant start=+listen+ skip=+\\\\\|\\\;+ end=+;+he=e-1 contains=ngxListenOptions,ngxString
 syn keyword ngxDirectiveImportant internal
 syn keyword ngxDirectiveImportant proxy_pass
 syn keyword ngxDirectiveImportant memcached_pass
@@ -87,9 +82,9 @@ syn match ngxStatusCode  /\d\d\d/ contained
 syn match ngxStatusCodes /\d\d\d/ contained contains=ngxStatusCode nextgroup=ngxStatusCode skipwhite skipempty
 
 syn match  ngxRewriteURI  /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewritedURI skipwhite skipempty
-syn region ngxRewriteURI  start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contained contains=ngxVariableString nextgroup=ngxRewritedURI skipwhite skipempty
+syn region ngxRewriteURI  start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString nextgroup=ngxRewritedURI skipwhite skipempty
 syn match  ngxRewritedURI /\S\+/ contained contains=ngxVariableString nextgroup=ngxRewriteFlag skipwhite skipempty
-syn region ngxRewritedURI start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contained contains=ngxVariableString nextgroup=ngxRewriteFlag skipwhite skipempty
+syn region ngxRewritedURI start=+[^:a-zA-Z>!\\@]\z(["']\)+lc=1 end=+\z1+ skip=+\\\\\|\\\z1+ contains=ngxVariableString nextgroup=ngxRewriteFlag skipwhite skipempty
 
 syn keyword ngxRewriteFlag last      contained
 syn keyword ngxRewriteFlag break     contained
@@ -119,6 +114,7 @@ syn keyword ngxDirective access_log
 syn keyword ngxDirective add_after_body
 syn keyword ngxDirective add_before_body
 syn keyword ngxDirective add_header
+syn keyword ngxDirective add_trailer
 syn keyword ngxDirective addition_types
 syn keyword ngxDirective aio
 syn keyword ngxDirective aio_write
@@ -140,10 +136,7 @@ syn keyword ngxDirective autoindex
 syn keyword ngxDirective autoindex_exact_size
 syn keyword ngxDirective autoindex_format
 syn keyword ngxDirective autoindex_localtime
-syn keyword ngxDirective charset nextgroup=ngxCharset skipwhite skipempty
-
-syn keyword ngxCharset   utf-8 UTF-8
-
+syn keyword ngxDirective charset
 syn keyword ngxDirective charset_map
 syn keyword ngxDirective charset_types
 syn keyword ngxDirective chunked_transfer_encoding
@@ -551,7 +544,7 @@ syn keyword ngxDirective ssl_password_file
 syn keyword ngxDirective ssl_prefer_server_ciphers
 syn keyword ngxDirective ssl_preread
 syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite skipempty
-syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 TLSv1.3 contained nextgroup=ngxSSLProtocol skipwhite skipempty
+syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 contained nextgroup=ngxSSLProtocol skipwhite skipempty
 syn keyword ngxDirective ssl_session_cache
 syn keyword ngxDirective ssl_session_ticket_key
 syn keyword ngxDirective ssl_session_tickets
@@ -664,7 +657,6 @@ syn keyword ngxDirective worker_processes
 syn keyword ngxDirective worker_rlimit_core
 syn keyword ngxDirective worker_rlimit_nofile
 syn keyword ngxDirective worker_rlimit_sigpending
-syn keyword ngxDirective worker_shutdown_timeout
 syn keyword ngxDirective worker_threads
 syn keyword ngxDirective working_directory
 syn keyword ngxDirective xclient
@@ -2196,33 +2188,26 @@ syn keyword ngxDirectiveThirdParty xss_input_types
 " highlight
 
 hi link ngxComment Comment
-hi link ngxVariable PreProc
+hi link ngxVariable Identifier
 hi link ngxVariableString PreProc
 hi link ngxString String
 hi link ngxLocationPath String
-hi link ngxLocationNamedLoc PreProc
+hi link ngxLocationNamedLoc Identifier
 
-hi link ngxDirective Identifier
+hi link ngxBoolean Boolean
+hi link ngxStatusCode Number
+hi link ngxRewriteFlag Boolean
 hi link ngxDirectiveBlock Statement
 hi link ngxDirectiveImportant Type
 hi link ngxDirectiveControl Keyword
 hi link ngxDirectiveError Constant
-hi link ngxDirectiveThirdParty Identifier
 hi link ngxDirectiveDeprecated Error
+hi link ngxDirective Identifier
+hi link ngxDirectiveThirdParty Special
 
-hi link ngxBoolean Boolean
-hi link ngxNumber Number
-hi link ngxMeasure Number
-hi link ngxStatusCode Number
-hi link ngxRewriteFlag Boolean
-
-hi link ngxCharset keyword
 hi link ngxListenOptions Keyword
 hi link ngxMailProtocol Keyword
 hi link ngxSSLProtocol Keyword
-
-hi link ngxRewriteURI  Special
-hi link ngxRewritedURI StorageClass
 
 hi link ngxThirdPartyKeyword keyword
 

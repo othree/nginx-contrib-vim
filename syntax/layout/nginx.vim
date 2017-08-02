@@ -114,6 +114,7 @@ syn keyword ngxDirective access_log
 syn keyword ngxDirective add_after_body
 syn keyword ngxDirective add_before_body
 syn keyword ngxDirective add_header
+syn keyword ngxDirective add_trailer
 syn keyword ngxDirective addition_types
 syn keyword ngxDirective aio
 syn keyword ngxDirective aio_write
