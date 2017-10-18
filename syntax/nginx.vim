@@ -179,6 +179,7 @@ syn keyword ngxDirective fastcgi_buffering
 syn keyword ngxDirective fastcgi_buffers
 syn keyword ngxDirective fastcgi_busy_buffers_size
 syn keyword ngxDirective fastcgi_cache
+syn keyword ngxDirective fastcgi_cache_background_update
 syn keyword ngxDirective fastcgi_cache_bypass
 syn keyword ngxDirective fastcgi_cache_key
 syn keyword ngxDirective fastcgi_cache_lock
@@ -368,6 +369,7 @@ syn keyword ngxDirective proxy_buffering
 syn keyword ngxDirective proxy_buffers
 syn keyword ngxDirective proxy_busy_buffers_size
 syn keyword ngxDirective proxy_cache
+syn keyword ngxDirective proxy_cache_background_update
 syn keyword ngxDirective proxy_cache_bypass
 syn keyword ngxDirective proxy_cache_convert_head
 syn keyword ngxDirective proxy_cache_key
@@ -457,6 +459,7 @@ syn keyword ngxDirective scgi_buffering
 syn keyword ngxDirective scgi_buffers
 syn keyword ngxDirective scgi_busy_buffers_size
 syn keyword ngxDirective scgi_cache
+syn keyword ngxDirective scgi_cache_background_update
 syn keyword ngxDirective scgi_cache_bypass
 syn keyword ngxDirective scgi_cache_key
 syn keyword ngxDirective scgi_cache_lock
@@ -595,6 +598,7 @@ syn keyword ngxDirective uwsgi_buffering
 syn keyword ngxDirective uwsgi_buffers
 syn keyword ngxDirective uwsgi_busy_buffers_size
 syn keyword ngxDirective uwsgi_cache
+syn keyword ngxDirective uwsgi_cache_background_update
 syn keyword ngxDirective uwsgi_cache_bypass
 syn keyword ngxDirective uwsgi_cache_key
 syn keyword ngxDirective uwsgi_cache_lock
