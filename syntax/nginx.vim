@@ -661,6 +661,7 @@ syn keyword ngxDirective worker_processes
 syn keyword ngxDirective worker_rlimit_core
 syn keyword ngxDirective worker_rlimit_nofile
 syn keyword ngxDirective worker_rlimit_sigpending
+syn keyword ngxDirective worker_shutdown_timeout
 syn keyword ngxDirective worker_threads
 syn keyword ngxDirective working_directory
 syn keyword ngxDirective xclient
