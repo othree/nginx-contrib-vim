@@ -179,6 +179,7 @@ syn keyword ngxDirective fastcgi_buffering
 syn keyword ngxDirective fastcgi_buffers
 syn keyword ngxDirective fastcgi_busy_buffers_size
 syn keyword ngxDirective fastcgi_cache
+syn keyword ngxDirective fastcgi_cache_background_update
 syn keyword ngxDirective fastcgi_cache_bypass
 syn keyword ngxDirective fastcgi_cache_key
 syn keyword ngxDirective fastcgi_cache_lock
@@ -368,6 +369,7 @@ syn keyword ngxDirective proxy_buffering
 syn keyword ngxDirective proxy_buffers
 syn keyword ngxDirective proxy_busy_buffers_size
 syn keyword ngxDirective proxy_cache
+syn keyword ngxDirective proxy_cache_background_update
 syn keyword ngxDirective proxy_cache_bypass
 syn keyword ngxDirective proxy_cache_convert_head
 syn keyword ngxDirective proxy_cache_key
@@ -544,7 +546,7 @@ syn keyword ngxDirective ssl_password_file
 syn keyword ngxDirective ssl_prefer_server_ciphers
 syn keyword ngxDirective ssl_preread
 syn keyword ngxDirective ssl_protocols nextgroup=ngxSSLProtocol skipwhite skipempty
-syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 contained nextgroup=ngxSSLProtocol skipwhite skipempty
+syn keyword ngxSSLProtocol SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 TLSv1.3 contained nextgroup=ngxSSLProtocol skipwhite skipempty
 syn keyword ngxDirective ssl_session_cache
 syn keyword ngxDirective ssl_session_ticket_key
 syn keyword ngxDirective ssl_session_tickets
@@ -595,6 +597,7 @@ syn keyword ngxDirective uwsgi_buffering
 syn keyword ngxDirective uwsgi_buffers
 syn keyword ngxDirective uwsgi_busy_buffers_size
 syn keyword ngxDirective uwsgi_cache
+syn keyword ngxDirective uwsgi_cache_background_update
 syn keyword ngxDirective uwsgi_cache_bypass
 syn keyword ngxDirective uwsgi_cache_key
 syn keyword ngxDirective uwsgi_cache_lock
@@ -657,6 +660,7 @@ syn keyword ngxDirective worker_processes
 syn keyword ngxDirective worker_rlimit_core
 syn keyword ngxDirective worker_rlimit_nofile
 syn keyword ngxDirective worker_rlimit_sigpending
+syn keyword ngxDirective worker_shutdown_timeout
 syn keyword ngxDirective worker_threads
 syn keyword ngxDirective working_directory
 syn keyword ngxDirective xclient
