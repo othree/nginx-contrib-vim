@@ -326,6 +326,8 @@ syn keyword ngxDirective memcached_read_timeout
 syn keyword ngxDirective memcached_send_timeout
 syn keyword ngxDirective merge_slashes
 syn keyword ngxDirective min_delete_depth
+syn keyword ngxDirective mirror
+syn keyword ngxDirective mirror_request_body
 syn keyword ngxDirective modern_browser
 syn keyword ngxDirective modern_browser_value
 syn keyword ngxDirective mp4
@@ -459,6 +461,7 @@ syn keyword ngxDirective scgi_buffering
 syn keyword ngxDirective scgi_buffers
 syn keyword ngxDirective scgi_busy_buffers_size
 syn keyword ngxDirective scgi_cache
+syn keyword ngxDirective scgi_cache_background_update
 syn keyword ngxDirective scgi_cache_bypass
 syn keyword ngxDirective scgi_cache_key
 syn keyword ngxDirective scgi_cache_lock
