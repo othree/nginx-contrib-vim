@@ -252,15 +252,17 @@ syn keyword ngxDirective hls_forward_args
 syn keyword ngxDirective hls_fragment
 syn keyword ngxDirective hls_mp4_buffer_size
 syn keyword ngxDirective hls_mp4_max_buffer_size
-syn keyword ngxDirective http2_chunk_size
 syn keyword ngxDirective http2_body_preread_size
+syn keyword ngxDirective http2_chunk_size
 syn keyword ngxDirective http2_idle_timeout
 syn keyword ngxDirective http2_max_concurrent_streams
 syn keyword ngxDirective http2_max_field_size
 syn keyword ngxDirective http2_max_header_size
 syn keyword ngxDirective http2_max_requests
+syn keyword ngxDirective http2_pool_size
 syn keyword ngxDirective http2_recv_buffer_size
 syn keyword ngxDirective http2_recv_timeout
+syn keyword ngxDirective http2_streams_index_size
 syn keyword ngxDirective if_modified_since
 syn keyword ngxDirective ignore_invalid_headers
 syn keyword ngxDirective image_filter
@@ -419,6 +421,7 @@ syn keyword ngxDirective proxy_send_lowat
 syn keyword ngxDirective proxy_send_timeout
 syn keyword ngxDirective proxy_set_body
 syn keyword ngxDirective proxy_set_header
+syn keyword ngxDirective proxy_ssl
 syn keyword ngxDirective proxy_ssl_certificate
 syn keyword ngxDirective proxy_ssl_certificate_key
 syn keyword ngxDirective proxy_ssl_ciphers
